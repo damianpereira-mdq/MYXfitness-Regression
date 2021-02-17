@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 161.966 s <<< FAILURE! - in TestSuite
+testCases.HomeMenuCases.editManageProfiles  Time elapsed: 46.77 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false]
+	at testCases.HomeMenuCases.editManageProfiles(HomeMenuCases.java:193)
+

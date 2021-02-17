@@ -1,0 +1,4 @@
+testCases\WhosWorkingCases.class
+testCases\LogInCases.class
+testCases\HomeMenuCases.class
+testCases\SetupConnection.class
