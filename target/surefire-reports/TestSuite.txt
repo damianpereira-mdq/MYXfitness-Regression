@@ -1,10 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 161.966 s <<< FAILURE! - in TestSuite
-testCases.HomeMenuCases.editManageProfiles  Time elapsed: 46.77 s  <<< FAILURE!
+Tests run: 16, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 199.596 s <<< FAILURE! - in TestSuite
+testCases.LogInCases.invalidPassword  Time elapsed: 4.56 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	expected [true] but found [false]
-	at testCases.HomeMenuCases.editManageProfiles(HomeMenuCases.java:193)
+	at testCases.LogInCases.invalidPassword(LogInCases.java:89)
+
+testCases.HomeScreenCases.openMenuCheckAddUser  Time elapsed: 21.906 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EER3MNQ', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 958b28dd-03a8-4089-9228-f2eb8d5357bd
+*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
+	at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:110)
 

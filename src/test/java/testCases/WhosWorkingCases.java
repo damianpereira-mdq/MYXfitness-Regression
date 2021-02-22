@@ -1,5 +1,7 @@
 package testCases;
 
+
+
 import org.testng.annotations.Test;
 
 import io.qameta.allure.Epic;
@@ -13,9 +15,10 @@ public class WhosWorkingCases extends SetupConnection {
 	
 
 	@Test
-	public void validateOptionsAvailable () {
+	public void validateOptionsAvailable () throws InterruptedException {
 		
-		
+		driver.findElementByXPath("(//android.widget.ImageView[@content-desc=\"image\"])[1]").click();
+		Thread.sleep(10000);
 		
 	}
 	

@@ -11,53 +11,25 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
-import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
-@Epic("Regression Test")
-@Feature("Menu Tests")
-
-public class HomeMenuCases extends SetupConnection {
-
-	@Test(priority = 0, description = "Open Menu functionality")
-	@Description("Open the menu and check if all the options are visible.")
-	@Severity(SeverityLevel.NORMAL)
-	public void openMenu() {
-		
-		//OPEN MENU		
-		driver.findElementById("com.myxfitness.app:id/profileHeader").click();
-
-		//ELEMENTS ARE DISPLAYED
-		driver.findElementById("com.myxfitness.app:id/manageProfile").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/settings").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/stats").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/settings").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/account_label").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/tutorials").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/assesment").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/help").isDisplayed();
-		driver.findElementById("com.myxfitness.app:id/logout").isDisplayed();
-
-		
-		
-		
-		//CLOSE MENU
-		driver.findElementById("com.myxfitness.app:id/container").click();
-		System.out.println("1- Open Menu Check all options are displayed.");
-		
-	}
+public class ManageProfilesCases extends SetupConnection {	
+	
+	//FROM Home Screen	
 	
 	@Test(priority = 1, description = "Open Manage Profiles")
 	@Description("Open the option 'Manage Profiles' and check if all the options are visible")
 	@Severity(SeverityLevel.NORMAL)
-	public void openManageProfiles() {
+	public void openManageProfiles() throws Exception {
 		//OPEN MENU
 		driver.findElementById("com.myxfitness.app:id/profileHeader").click();
 		
 		driver.findElementById("com.myxfitness.app:id/manageProfile").click();	
 		
+		Thread.sleep(5000);
+		
+		//CHECK IF ELEMENTS ARE DISPLAYED		
 		driver.findElementById("com.myxfitness.app:id/firstName").isDisplayed();
 		driver.findElementById("com.myxfitness.app:id/lastName").isDisplayed();
 		driver.findElementById("com.myxfitness.app:id/email").isDisplayed();
@@ -72,18 +44,18 @@ public class HomeMenuCases extends SetupConnection {
 		
 		//BACK TO MAIN SCREEN
 		driver.findElementById("com.myxfitness.app:id/btn_header_back").click();
-		System.out.println("2- 'Manage Profiles' all options are displayed.");
+		System.out.println("1- 'Manage Profiles' all options are displayed.");
 	}
 	
-	@Test(priority = 2, description = "Edit Manage Profiles", alwaysRun=true)
+	@Test(priority = 2, description = "Edit Manage Profiles")
 	@Description("Edit content of the main profile under'Manage Profiles'")
 	@Severity(SeverityLevel.NORMAL)
 	public void editManageProfiles() throws Exception {
 		//OPEN MENU
 		driver.findElementById("com.myxfitness.app:id/profileHeader").click();	
 		//OPEN MANAGE PROFILES
-		driver.findElementById("com.myxfitness.app:id/manageProfile").click();
-		
+		driver.findElementById("com.myxfitness.app:id/manageProfile").click();		
+				
 		//NAME AND LAST NAME
 		driver.findElementById("com.myxfitness.app:id/firstName").sendKeys("Santiago");
 		driver.findElementById("com.myxfitness.app:id/lastName").sendKeys("Rubianes");		
@@ -103,11 +75,7 @@ public class HomeMenuCases extends SetupConnection {
 		String textValidation = driver.findElementById("com.myxfitness.app:id/lbl_error_message").getText();
 		//SOFT ASSERT >>>> needs assertAll(); at the very end.
 		SoftAssert softAssertion= new SoftAssert();
-		softAssertion.assertTrue(textValidation.contains("Please enter a valid heightttt"));
-		
-		//assertTrue(textValidation.contains("Please enter a valid heightttt"));
-		
-		
+		softAssertion.assertTrue(textValidation.contains("Please enter a valid height"));
 		
 		//WEIGHT PROPER NUMBERS
 		driver.findElementById("com.myxfitness.app:id/feet").clear();
@@ -194,8 +162,8 @@ public class HomeMenuCases extends SetupConnection {
 		System.out.println("2- 'Manage Profiles' profile edited succesfully");
 	}
 
-	@Test(priority = 3, description = "Edit Manage Profiles")
-	@Description("Edit content of the main profile under'Manage Profiles'")
+	@Test(priority = 3, description = "Edit Manage Profiles back to default information.")
+	@Description("Edit content of the main profile under 'Manage Profiles' back to original user")
 	@Severity(SeverityLevel.NORMAL)
 	public void editManageProfilesBack() throws Exception {
 		//OPEN MENU
@@ -282,9 +250,10 @@ public class HomeMenuCases extends SetupConnection {
 		
 		driver.findElementById("com.myxfitness.app:id/action").click(); 
 		Thread.sleep(3000);
+		
 		driver.findElementById("com.myxfitness.app:id/btn_header_back").click();
-		System.out.println("2- 'Manage Profiles' profile edited back succesfully");
+		System.out.println("3- 'Manage Profiles' profile edited back succesfully");
 		
 	}
-
+	
 }

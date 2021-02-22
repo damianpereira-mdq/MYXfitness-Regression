@@ -92,8 +92,9 @@
 					<version>3.0.0-M5</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>runTests.xml</suiteXmlFile>
+							<suiteXmlFile>regressionTest.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						
 						<argLine>
 							-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 						</argLine>

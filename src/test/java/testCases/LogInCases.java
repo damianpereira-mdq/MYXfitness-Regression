@@ -3,10 +3,10 @@ package testCases;
 import static org.testng.Assert.assertTrue;
 
 import java.util.Random;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.appium.java_client.MobileElement;
 import io.qameta.allure.Description;
@@ -37,8 +37,9 @@ public class LogInCases extends SetupConnection {
 		
 		System.out.println("This is @BeforeTest!");
 	}
-
-	@Test(description = "Invalid login scenario with a wrong email.")
+	
+	
+	@Test(priority = 0, description = "Invalid login scenario with a wrong email.")
 	@Description("Invalid email login test")
 	@Severity(SeverityLevel.NORMAL)
 	public void invalidEmail() {
@@ -63,30 +64,33 @@ public class LogInCases extends SetupConnection {
 
 	}
 
-	@Test(description = "Invalid login scenario with a wrong password.")
-	@Description("Invalid password login test")
-	@Severity(SeverityLevel.NORMAL)
-	public void invalidPassword() {
+	@Test(priority = 1, description = "Invalid login scenario with a wrong password.")
+	@Description("Assert: error message is shown as expected 'It seems that either your user name or password is incorrect.' RESULT: TRUE/FALSE")
+	@Severity(SeverityLevel.NORMAL)	
+	public void invalidPassword  () {
 
 		driver.findElementById("com.myxfitness.app:id/et_email").sendKeys("dpereira@sweatworks.net");
 		driver.findElementById("com.myxfitness.app:id/loginPassword").sendKeys("Myx2021!!!");
 		driver.findElementById("com.myxfitness.app:id/btn_login").click();
 
-		// ASSERT
-		MobileElement element = (MobileElement) driver.findElementById("com.myxfitness.app:id/text_message");
-		String elText = element.getText();
-		System.out.println("El mensaje es: " + elText);
+		// ASSERT HEIGHT ERROR MESSAGE 
+		String textValidation = driver.findElementById("com.myxfitness.app:id/text_message").getText();
+		//SOFT ASSERT >>>> needs assertAll(); at the very end.
+		SoftAssert softAssertion= new SoftAssert();
+		softAssertion.assertTrue(textValidation.contains("It seems that either your user name or password is incorrect.213b4")); //ERROR
 
-		Assert.assertEquals(elText, "It seems that either your user name or password is incorrect.");
+		//Assert.assertEquals(elText, "It seems that either your user name or password is incorrect.");
 
 		System.out.println("This is the invalidPassword test. Email: test.qa." + getRandomString() + "@gmail.com");
 
 		// CLOSE POPUP MESSAGE
 		driver.findElementById("com.myxfitness.app:id/button_single").click();
+		
+		softAssertion.assertAll();
 
 	}
 
-	@Test(description = "Invalid login scenario with an empty email and password.")
+	@Test(priority = 2, description = "Invalid login scenario with an empty email and password.")
 	@Description("Empty password and email")
 	@Severity(SeverityLevel.NORMAL)
 	public void noEmailAndPassword() {
@@ -109,7 +113,7 @@ public class LogInCases extends SetupConnection {
 
 	}
 	
-	@Test(description = "Customer wants to reset the password, but entered no email.")
+	@Test(priority = 3, description = "Customer wants to reset the password, but entered no email.")
 	@Description("Reset password with no email entered")
 	@Severity(SeverityLevel.NORMAL)
 	public void passwordRecoveryEmpty() throws Exception {
@@ -131,7 +135,7 @@ public class LogInCases extends SetupConnection {
 
 	}
 	
-	@Test(description = "Customer wants to reset the password, but entered an invalid email.")
+	@Test(priority = 4, description = "Customer wants to reset the password, but entered an invalid email.")
 	@Description("Reset password with unregistered email entered")
 	@Severity(SeverityLevel.NORMAL)
 	public void passwordRecoveryWrongEmail() throws Exception {
@@ -155,7 +159,7 @@ public class LogInCases extends SetupConnection {
 	}
 	
 	//FINAL VALID PASSWORD RESET
-	@Test(description = "Customer wants to reset the password, but entered no email.")
+	@Test(priority = 5, description = "Customer wants to reset the password, but entered no email.")
 	@Description("Reset password with no email entered")
 	@Severity(SeverityLevel.NORMAL)
 	public void passwordRecoveryzValid() throws Exception {
@@ -175,10 +179,28 @@ public class LogInCases extends SetupConnection {
 
 	}
 	
+	@Test(priority = 6, description = "Customer selects the option 'I don't have an account'.")
+	@Description("Click on 'Idon't have an account' option")
+	@Severity(SeverityLevel.NORMAL)
+	public void iDontHaveAccount() throws Exception {
+
+		driver.findElementById("com.myxfitness.app:id/tv_sign_up").click();		
+
+		// ASSERT
+		String textValidation = driver.findElementById("com.myxfitness.app:id/tv_welcome").getText();
+		assertTrue(textValidation.contains("WELCOME TO MYXfitness!"));
+		
+		driver.findElementById("com.myxfitness.app:id/btn_continue").click();
+		driver.findElementById("com.myxfitness.app:id/btn_login").click();		
+		
+		System.out.println("I don't have an account selected");
+		
+
+	}
 	
 	
 	//FINAL VALID LOGIN
-	@Test(description = "Valid login scenario with a valid email and password.")
+	@Test(priority = 7, description = "Valid login scenario with a valid email and password.")
 	@Description("Valid password and email")
 	@Severity(SeverityLevel.BLOCKER)
 	public void validEmailAndPassword() throws Exception {
@@ -193,8 +215,7 @@ public class LogInCases extends SetupConnection {
 
 		Assert.assertEquals(valid, "Who's working out today?");
 
-		driver.findElementByXPath("(//android.widget.ImageView[@content-desc=\"image\"])[1]").click();
-		Thread.sleep(10000);
+		
 		
 		System.out.println("This is the valid email and password test.");
 

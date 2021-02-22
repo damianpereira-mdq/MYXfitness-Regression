@@ -6,8 +6,12 @@
 		<classes>
 			<!-- <class name="testCases.SetupConnection" /> -->
 			<class name="testCases.LogInCases" />
-			<class name="testCases.HomeMenuCases" />
-			<!-- <class name="com.qa.hubspot.tests.HomePageTest" /> --><!-- <class name="com.qa.hubspot.tests.ContactsPageTest" /> -->
+				
+			<class name="testCases.WhosWorkingCases" />
+			<class name="testCases.HomeScreenCases" />
+			<class name="testCases.ManageProfilesCases" />
+			
+			
 		</classes>
 	</test>
 </suite>

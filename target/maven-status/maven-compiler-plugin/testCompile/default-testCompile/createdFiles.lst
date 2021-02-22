@@ -1,4 +1,5 @@
+testCases\ManageProfilesCases.class
 testCases\WhosWorkingCases.class
 testCases\LogInCases.class
-testCases\HomeMenuCases.class
+testCases\HomeScreenCases.class
 testCases\SetupConnection.class
