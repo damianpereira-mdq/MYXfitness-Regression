@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LogInCases">
+      <class name="testCases.ManageProfilesCases">
         <methods>
+          <include name="editManageProfilesBack"/>
           <include name="TearDown"/>
-          <include name="goToLoginScreen"/>
-          <include name="invalidPassword"/>
+          <include name="openManageProfiles"/>
           <include name="startConnection"/>
+          <include name="editManageProfiles"/>
         </methods>
-      </class> <!-- testCases.LogInCases -->
+      </class> <!-- testCases.ManageProfilesCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

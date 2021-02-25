@@ -5,10 +5,9 @@
 	<test name="MYXfitness Resgression Test Classes" preserve-order="true"  >
 		<classes>
 			<!-- <class name="testCases.SetupConnection" /> -->
-			<class name="testCases.LogInCases" />
-				
+			<class name="testCases.LogInCases" />				
 			<class name="testCases.WhosWorkingCases" />
-			<class name="testCases.HomeScreenCases" />
+			<class name="testCases.HomeScreenActiveAccountCases" />
 			<class name="testCases.ManageProfilesCases" />
 			
 			

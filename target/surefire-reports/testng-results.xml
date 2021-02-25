@@ -1,215 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="22" passed="14" failed="2" skipped="0">
+<testng-results ignored="6" total="27" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-22T11:43:59 ART" name="MYXfitness Regression Test" finished-at="2021-02-22T11:47:04 ART" duration-ms="184772">
+  <suite started-at="2021-02-24T21:50:38 ART" name="MYXfitness Regression Test" finished-at="2021-02-24T21:53:36 ART" duration-ms="178769">
     <groups>
     </groups>
-    <test started-at="2021-02-22T11:43:59 ART" name="MYXfitness Resgression Test Classes" finished-at="2021-02-22T11:47:04 ART" duration-ms="184772">
+    <test started-at="2021-02-24T21:50:38 ART" name="MYXfitness Resgression Test Classes" finished-at="2021-02-24T21:53:36 ART" duration-ms="178769">
       <class name="testCases.LogInCases">
-        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:43:49 ART" name="startConnection" finished-at="2021-02-22T11:43:59 ART" duration-ms="10103" status="PASS">
+        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:27 ART" name="startConnection" finished-at="2021-02-24T21:50:38 ART" duration-ms="10452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startConnection -->
-        <test-method is-config="true" signature="goToLoginScreen()[pri:0, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:43:59 ART" name="goToLoginScreen" finished-at="2021-02-22T11:43:59 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="goToLoginScreen()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:38 ART" name="goToLoginScreen" finished-at="2021-02-24T21:50:38 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToLoginScreen -->
-        <test-method signature="invalidEmail()[pri:0, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:43:59 ART" name="invalidEmail" description="Invalid login scenario with a wrong email." finished-at="2021-02-22T11:44:05 ART" duration-ms="5928" status="PASS">
+        <test-method signature="welcomeisDisplayed()[pri:-2, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:38 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-02-24T21:50:50 ART" duration-ms="12448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomeisDisplayed -->
+        <test-method signature="theRoadisDisplayed()[pri:-1, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:50 ART" name="theRoadisDisplayed" description="First screen &#039;The road...&#039; is displayed" finished-at="2021-02-24T21:50:50 ART" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theRoadisDisplayed -->
+        <test-method signature="invalidEmail()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:50 ART" name="invalidEmail" description="Invalid login scenario with a wrong email." finished-at="2021-02-24T21:50:58 ART" duration-ms="7289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method signature="invalidPassword()[pri:1, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:05 ART" name="invalidPassword" description="Invalid login scenario with a wrong password." finished-at="2021-02-22T11:44:10 ART" duration-ms="4544" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testCases.LogInCases.invalidPassword(LogInCases.java:89)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="invalidPassword()[pri:1, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:58 ART" name="invalidPassword" description="Invalid login scenario with a wrong password." finished-at="2021-02-24T21:51:02 ART" duration-ms="4671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPassword -->
-        <test-method signature="noEmailAndPassword()[pri:2, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:10 ART" name="noEmailAndPassword" description="Invalid login scenario with an empty email and password." finished-at="2021-02-22T11:44:13 ART" duration-ms="3455" status="PASS">
+        <test-method signature="noEmailAndPassword()[pri:2, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:02 ART" name="noEmailAndPassword" description="Invalid login scenario with an empty email and password." finished-at="2021-02-24T21:51:05 ART" duration-ms="2897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noEmailAndPassword -->
-        <test-method signature="passwordRecoveryEmpty()[pri:3, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:13 ART" name="passwordRecoveryEmpty" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-22T11:44:17 ART" duration-ms="3566" status="PASS">
+        <test-method signature="passwordRecoveryEmpty()[pri:3, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:05 ART" name="passwordRecoveryEmpty" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-24T21:51:09 ART" duration-ms="3468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordRecoveryEmpty -->
-        <test-method signature="passwordRecoveryWrongEmail()[pri:4, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:17 ART" name="passwordRecoveryWrongEmail" description="Customer wants to reset the password, but entered an invalid email." finished-at="2021-02-22T11:44:23 ART" duration-ms="5872" status="PASS">
+        <test-method signature="passwordRecoveryWrongEmail()[pri:4, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:09 ART" name="passwordRecoveryWrongEmail" description="Customer wants to reset the password, but entered an invalid email." finished-at="2021-02-24T21:51:16 ART" duration-ms="7182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordRecoveryWrongEmail -->
-        <test-method signature="passwordRecoveryzValid()[pri:5, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:23 ART" name="passwordRecoveryzValid" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-22T11:44:28 ART" duration-ms="5017" status="PASS">
+        <test-method signature="passwordRecoveryzValid()[pri:5, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:16 ART" name="passwordRecoveryzValid" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-24T21:51:21 ART" duration-ms="5189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordRecoveryzValid -->
-        <test-method signature="iDontHaveAccount()[pri:6, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:28 ART" name="iDontHaveAccount" description="Customer selects the option &#039;I don&#039;t have an account&#039;." finished-at="2021-02-22T11:44:31 ART" duration-ms="2851" status="PASS">
+        <test-method signature="iDontHaveAccount()[pri:6, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:21 ART" name="iDontHaveAccount" description="Customer selects the option &#039;I don&#039;t have an account&#039;." finished-at="2021-02-24T21:51:24 ART" duration-ms="2665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iDontHaveAccount -->
-        <test-method signature="validEmailAndPassword()[pri:7, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:44:31 ART" name="validEmailAndPassword" description="Valid login scenario with a valid email and password." finished-at="2021-02-22T11:44:37 ART" duration-ms="6550" status="PASS">
+        <test-method signature="validEmailAndPassword()[pri:7, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:24 ART" name="validEmailAndPassword" description="Valid login scenario with a valid email and password." finished-at="2021-02-24T21:51:29 ART" duration-ms="5638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validEmailAndPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.LogInCases@71178a52]" started-at="2021-02-22T11:47:04 ART" name="TearDown" finished-at="2021-02-22T11:47:04 ART" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:53:36 ART" name="TearDown" finished-at="2021-02-24T21:53:36 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- testCases.LogInCases -->
       <class name="testCases.WhosWorkingCases">
-        <test-method signature="validateOptionsAvailable()[pri:0, instance:testCases.WhosWorkingCases@ff6077]" started-at="2021-02-22T11:44:37 ART" name="validateOptionsAvailable" finished-at="2021-02-22T11:44:49 ART" duration-ms="11289" status="PASS">
+        <test-method signature="validateOptionsAvailable()[pri:0, instance:testCases.WhosWorkingCases@10ec523c]" started-at="2021-02-24T21:51:29 ART" name="validateOptionsAvailable" finished-at="2021-02-24T21:51:32 ART" duration-ms="2853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateOptionsAvailable -->
       </class> <!-- testCases.WhosWorkingCases -->
-      <class name="testCases.HomeScreenCases">
-        <test-method signature="openMenu()[pri:0, instance:testCases.HomeScreenCases@abbc908]" started-at="2021-02-22T11:44:49 ART" name="openMenu" description="Open and Close Menu functionality" finished-at="2021-02-22T11:44:49 ART" duration-ms="857" status="PASS">
+      <class name="testCases.HomeScreenActiveAccountCases">
+        <test-method signature="profileHeaderIsVisible()[pri:1, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:32 ART" name="profileHeaderIsVisible" description="Check if &#039;Profile Header&#039; is visible" finished-at="2021-02-24T21:51:41 ART" duration-ms="9200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileHeaderIsVisible -->
+        <test-method signature="accountNameIsVisible()[pri:2, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:41 ART" name="accountNameIsVisible" description="Check if Account Name is visible" finished-at="2021-02-24T21:51:42 ART" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountNameIsVisible -->
+        <test-method signature="bikeFilterIsVisible()[pri:3, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:42 ART" name="bikeFilterIsVisible" description="Check if Bike Filter is visible" finished-at="2021-02-24T21:51:42 ART" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bikeFilterIsVisible -->
+        <test-method signature="openMenu()[pri:30, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:42 ART" name="openMenu" description="Open and Close Menu functionality" finished-at="2021-02-24T21:51:43 ART" duration-ms="867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMenu -->
-        <test-method signature="openMenuCheckProfiles()[pri:1, instance:testCases.HomeScreenCases@abbc908]" started-at="2021-02-22T11:44:49 ART" name="openMenuCheckProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-22T11:44:51 ART" duration-ms="1423" status="PASS">
+        <test-method signature="openMenuCheckProfiles()[pri:31, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:43 ART" name="openMenuCheckProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:45 ART" duration-ms="1983" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMenuCheckProfiles -->
-        <test-method signature="openMenuSwitchProfiles()[pri:2, instance:testCases.HomeScreenCases@abbc908]" started-at="2021-02-22T11:44:51 ART" name="openMenuSwitchProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-22T11:44:58 ART" duration-ms="7290" status="PASS">
+        <test-method signature="openMenuSwitchProfiles()[pri:32, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:45 ART" name="openMenuSwitchProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:53 ART" duration-ms="8830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMenuSwitchProfiles -->
-        <test-method signature="openMenuCheckAddUser()[pri:3, instance:testCases.HomeScreenCases@abbc908]" started-at="2021-02-22T11:44:58 ART" name="openMenuCheckAddUser" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-22T11:45:20 ART" duration-ms="21918" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EER3MNQ', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
-Session ID: 958b28dd-03a8-4089-9228-f2eb8d5357bd
-*** Element info: {Using=id, value=com.myxfitness.app:id/stats}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-EER3MNQ', ip: '192.168.1.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
-Session ID: 958b28dd-03a8-4089-9228-f2eb8d5357bd
-*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:110)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="openMenuCheckAddUser()[pri:33, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:53 ART" name="openMenuCheckAddUser" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:55 ART" duration-ms="1196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMenuCheckAddUser -->
-      </class> <!-- testCases.HomeScreenCases -->
+      </class> <!-- testCases.HomeScreenActiveAccountCases -->
       <class name="testCases.ManageProfilesCases">
-        <test-method signature="openManageProfiles()[pri:1, instance:testCases.ManageProfilesCases@44afefd5]" started-at="2021-02-22T11:45:20 ART" name="openManageProfiles" description="Open Manage Profiles" finished-at="2021-02-22T11:45:31 ART" duration-ms="11274" status="PASS">
+        <test-method signature="openManageProfiles()[pri:1, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:51:55 ART" name="openManageProfiles" description="Open Manage Profiles" finished-at="2021-02-24T21:52:06 ART" duration-ms="11081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openManageProfiles -->
-        <test-method signature="editManageProfiles()[pri:2, instance:testCases.ManageProfilesCases@44afefd5]" started-at="2021-02-22T11:45:31 ART" name="editManageProfiles" description="Edit Manage Profiles" finished-at="2021-02-22T11:46:18 ART" duration-ms="46330" status="PASS">
+        <test-method signature="editManageProfiles()[pri:2, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:52:06 ART" name="editManageProfiles" description="Edit Manage Profiles" finished-at="2021-02-24T21:52:52 ART" duration-ms="46344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editManageProfiles -->
-        <test-method signature="editManageProfilesBack()[pri:3, instance:testCases.ManageProfilesCases@44afefd5]" started-at="2021-02-22T11:46:18 ART" name="editManageProfilesBack" description="Edit Manage Profiles back to default information." finished-at="2021-02-22T11:47:04 ART" duration-ms="46064" status="PASS">
+        <test-method signature="editManageProfilesBack()[pri:3, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:52:52 ART" name="editManageProfilesBack" description="Edit Manage Profiles back to default information." finished-at="2021-02-24T21:53:36 ART" duration-ms="44444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editManageProfilesBack -->

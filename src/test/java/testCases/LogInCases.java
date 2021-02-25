@@ -2,6 +2,8 @@ package testCases;
 
 import static org.testng.Assert.assertTrue;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -20,6 +22,8 @@ import io.qameta.allure.SeverityLevel;
 
 public class LogInCases extends SetupConnection {
 
+	String timeStamp = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());
+	
 	protected String getRandomString() {
 		String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890+-!/*_";
 		StringBuilder salt = new StringBuilder();
@@ -36,6 +40,40 @@ public class LogInCases extends SetupConnection {
 	public void goToLoginScreen() {
 		
 		System.out.println("This is @BeforeTest!");
+		System.out.println(timeStamp);
+		
+	}
+	
+	@Test(priority= -2, description= "First screen 'Welcome to MYX' is displayed")
+	@Description("Assert: WELCOME TO MYXfitness! text is displayed and correct")
+	public void welcomeisDisplayed () {
+		
+		MobileElement element = (MobileElement) driver.findElementById("com.myxfitness.app:id/tv_welcome");
+		String getText = element.getText();
+		
+		
+		SoftAssert softAssertion= new SoftAssert();
+		//softAssertion.assertTrue(getText.contains("WELCOME TO MYXfitness!!"));
+		softAssertion.assertEquals(getText, "WELCOME TO MYXfitness!");
+		
+		System.out.println("El mensaje es: " + getText);
+		softAssertion.assertAll();
+	}
+	
+	@Test(priority= -1, description= "First screen 'The road...' is displayed")
+	@Description("Assert: 'The road to success is paved with patience and persistence.' text is displayed and correct")
+	public void theRoadisDisplayed () {
+		
+		MobileElement element = (MobileElement) driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[2]");
+		String getText = element.getText();
+		
+		
+		SoftAssert softAssertion= new SoftAssert();
+		softAssertion.assertTrue(getText.contains("The road to success is paved"));
+		
+		System.out.println("El mensaje es: " + getText);
+		softAssertion.assertAll();
+		
 	}
 	
 	
@@ -54,14 +92,20 @@ public class LogInCases extends SetupConnection {
 		// ASSERT
 		MobileElement element = (MobileElement) driver.findElementById("com.myxfitness.app:id/text_message");
 		String elText = element.getText();
-		System.out.println("El mensaje es: " + elText);
-		Assert.assertEquals(elText, "It seems that either your user name or password is incorrect.");
+		
+		
+		SoftAssert softAssertion = new SoftAssert();
+		softAssertion.assertEquals(elText, "It seems that either your user name or password is incorrect.");
+		
+		
+		
+		
 
 		// CLOSE POPUP MESSAGE
 		driver.findElementById("com.myxfitness.app:id/button_single").click();
 
-		System.out.println("This is the invalidEmail test. Email: test.qa." + getRandomString() + "@gmail.com");
-
+		System.out.println("This is the invalidEmail test. Email: test.qa." + timeStamp + "@gmail.com");
+		softAssertion.assertAll();
 	}
 
 	@Test(priority = 1, description = "Invalid login scenario with a wrong password.")
@@ -77,7 +121,7 @@ public class LogInCases extends SetupConnection {
 		String textValidation = driver.findElementById("com.myxfitness.app:id/text_message").getText();
 		//SOFT ASSERT >>>> needs assertAll(); at the very end.
 		SoftAssert softAssertion= new SoftAssert();
-		softAssertion.assertTrue(textValidation.contains("It seems that either your user name or password is incorrect.213b4")); //ERROR
+		softAssertion.assertTrue(textValidation.contains("It seems that either your user name or password is incorrect.")); //FORCE ERROR
 
 		//Assert.assertEquals(elText, "It seems that either your user name or password is incorrect.");
 
@@ -104,13 +148,14 @@ public class LogInCases extends SetupConnection {
 		String elText = element.getText();
 		System.out.println("El mensaje es: " + elText);
 
-		Assert.assertEquals(elText, "Please introduce your email and password");
+		SoftAssert softAssertion = new SoftAssert();
+		softAssertion.assertEquals(elText, "Please introduce your email and password");
 
 		System.out.println("This is the invalidPassword test. Email: test.qa." + getRandomString() + "@gmail.com");
 
 		// CLOSE POPUP MESSAGE
 		driver.findElementById("com.myxfitness.app:id/button_single").click();
-
+		softAssertion.assertAll();
 	}
 	
 	@Test(priority = 3, description = "Customer wants to reset the password, but entered no email.")
@@ -126,12 +171,13 @@ public class LogInCases extends SetupConnection {
 		MobileElement textValidation = (MobileElement) driver.findElementById("com.myxfitness.app:id/tv_message");
 		String validation = textValidation.getText();
 		
-		Assert.assertEquals(validation, "Doesn't appear to be a valid email");
+		SoftAssert softAssertion = new SoftAssert();
+		softAssertion.assertEquals(validation, "Doesn't appear to be a valid email");
 
 		driver.findElementById("com.myxfitness.app:id/cancelButton").click();
 		
 		System.out.println("This is a reset password test without email.");
-		
+		softAssertion.assertAll();
 
 	}
 	

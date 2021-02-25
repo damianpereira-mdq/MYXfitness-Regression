@@ -4,6 +4,9 @@ import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -21,13 +24,16 @@ public class ManageProfilesCases extends SetupConnection {
 	@Test(priority = 1, description = "Open Manage Profiles")
 	@Description("Open the option 'Manage Profiles' and check if all the options are visible")
 	@Severity(SeverityLevel.NORMAL)
-	public void openManageProfiles() throws Exception {
-		//OPEN MENU
-		driver.findElementById("com.myxfitness.app:id/profileHeader").click();
+	public void openManageProfiles () {		
+	    
+		WebDriverWait wait = new WebDriverWait (driver, 10);
+	    wait.until(ExpectedConditions.elementToBeClickable(By.id("com.myxfitness.app:id/profileHeader")));
 		
+		//OPEN MENU
+		driver.findElementById("com.myxfitness.app:id/profileHeader").click();		
 		driver.findElementById("com.myxfitness.app:id/manageProfile").click();	
 		
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		
 		//CHECK IF ELEMENTS ARE DISPLAYED		
 		driver.findElementById("com.myxfitness.app:id/firstName").isDisplayed();
@@ -51,6 +57,10 @@ public class ManageProfilesCases extends SetupConnection {
 	@Description("Edit content of the main profile under'Manage Profiles'")
 	@Severity(SeverityLevel.NORMAL)
 	public void editManageProfiles() throws Exception {
+		
+		WebDriverWait wait = new WebDriverWait (driver, 10);
+	    wait.until(ExpectedConditions.elementToBeClickable(By.id("com.myxfitness.app:id/profileHeader")));
+		
 		//OPEN MENU
 		driver.findElementById("com.myxfitness.app:id/profileHeader").click();	
 		//OPEN MANAGE PROFILES
@@ -166,6 +176,10 @@ public class ManageProfilesCases extends SetupConnection {
 	@Description("Edit content of the main profile under 'Manage Profiles' back to original user")
 	@Severity(SeverityLevel.NORMAL)
 	public void editManageProfilesBack() throws Exception {
+		
+		WebDriverWait wait = new WebDriverWait (driver, 10);
+	    wait.until(ExpectedConditions.elementToBeClickable(By.id("com.myxfitness.app:id/profileHeader")));
+		
 		//OPEN MENU
 		driver.findElementById("com.myxfitness.app:id/profileHeader").click();	
 		//OPEN MANAGE PROFILES

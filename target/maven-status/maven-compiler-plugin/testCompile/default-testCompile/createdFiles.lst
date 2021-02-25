@@ -1,5 +1,5 @@
 testCases\ManageProfilesCases.class
 testCases\WhosWorkingCases.class
 testCases\LogInCases.class
-testCases\HomeScreenCases.class
+testCases\HomeScreenActiveAccountCases.class
 testCases\SetupConnection.class

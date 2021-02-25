@@ -3,13 +3,13 @@
 <suite configfailurepolicy="continue" name="Failed suite [MYXfitness Regression Test]" guice-stage="DEVELOPMENT" verbose="5">
   <test thread-count="5" name="MYXfitness Resgression Test Classes(failed)" verbose="5">
     <classes>
-      <class name="testCases.ManageProfilesCases">
+      <class name="testCases.HomeScreenCases">
         <methods>
+          <include name="openMenuCheckAddUser"/>
           <include name="TearDown"/>
           <include name="startConnection"/>
-          <include name="editManageProfiles"/>
         </methods>
-      </class> <!-- testCases.ManageProfilesCases -->
+      </class> <!-- testCases.HomeScreenCases -->
     </classes>
   </test> <!-- MYXfitness Resgression Test Classes(failed) -->
 </suite> <!-- Failed suite [MYXfitness Regression Test] -->

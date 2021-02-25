@@ -1,33 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-19T13:38:46 ART" name="Default suite" finished-at="2021-02-19T13:40:34 ART" duration-ms="107720">
+  <suite started-at="2021-02-24T23:22:35 ART" name="Default suite" finished-at="2021-02-24T23:22:50 ART" duration-ms="15126">
     <groups>
     </groups>
-    <test started-at="2021-02-19T13:38:46 ART" name="Default test" finished-at="2021-02-19T13:40:34 ART" duration-ms="107720">
-      <class name="testCases.ManageProfilesCases">
-        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.ManageProfilesCases@55cff952]" started-at="2021-02-19T13:38:38 ART" name="startConnection" finished-at="2021-02-19T13:38:46 ART" duration-ms="7594" status="PASS">
+    <test started-at="2021-02-24T23:22:35 ART" name="Default test" finished-at="2021-02-24T23:22:50 ART" duration-ms="15126">
+      <class name="testCases.HomeScreenActiveAccountCases">
+        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:26 ART" name="startConnection" finished-at="2021-02-24T23:22:35 ART" duration-ms="8532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startConnection -->
-        <test-method signature="openManageProfiles()[pri:1, instance:testCases.ManageProfilesCases@55cff952]" started-at="2021-02-19T13:38:46 ART" name="openManageProfiles" description="Open Manage Profiles" finished-at="2021-02-19T13:38:57 ART" duration-ms="10893" status="PASS">
+        <test-method signature="profileHeaderIsVisible()[pri:1, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:35 ART" name="profileHeaderIsVisible" description="Check if &#039;Profile Header&#039; is visible" finished-at="2021-02-24T23:22:35 ART" duration-ms="300" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openManageProfiles -->
-        <test-method signature="editManageProfiles()[pri:2, instance:testCases.ManageProfilesCases@55cff952]" started-at="2021-02-19T13:38:57 ART" name="editManageProfiles" description="Edit Manage Profiles" finished-at="2021-02-19T13:39:47 ART" duration-ms="50246" status="PASS">
+        </test-method> <!-- profileHeaderIsVisible -->
+        <test-method signature="accountNameIsVisible()[pri:2, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:35 ART" name="accountNameIsVisible" description="Check if Account Name is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editManageProfiles -->
-        <test-method signature="editManageProfilesBack()[pri:3, instance:testCases.ManageProfilesCases@55cff952]" started-at="2021-02-19T13:39:48 ART" name="editManageProfilesBack" description="Edit Manage Profiles back to default information." finished-at="2021-02-19T13:40:34 ART" duration-ms="45881" status="PASS">
+        </test-method> <!-- accountNameIsVisible -->
+        <test-method signature="bikeFilterIsVisible()[pri:3, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="bikeFilterIsVisible" description="Check if Bike Filter is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editManageProfilesBack -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.ManageProfilesCases@55cff952]" started-at="2021-02-19T13:40:34 ART" name="TearDown" finished-at="2021-02-19T13:40:34 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- bikeFilterIsVisible -->
+        <test-method signature="floorFilterIsVisible()[pri:4, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="floorFilterIsVisible" description="Check if Floor Filter is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floorFilterIsVisible -->
+        <test-method signature="recoveryFilterIsVisible()[pri:5, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="recoveryFilterIsVisible" description="Check if Recovery Filter is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recoveryFilterIsVisible -->
+        <test-method signature="crossTrainingFilterIsVisible()[pri:6, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="crossTrainingFilterIsVisible" description="Check if Cross-Training Filter is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crossTrainingFilterIsVisible -->
+        <test-method signature="myxMediaIsVisible()[pri:7, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="myxMediaIsVisible" description="Check if MYX Media is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myxMediaIsVisible -->
+        <test-method signature="smartMYXIsVisible()[pri:8, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="smartMYXIsVisible" description="Check if Smart MYX is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smartMYXIsVisible -->
+        <test-method signature="calendarIsVisible()[pri:9, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="calendarIsVisible" description="Check if calendar icon is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calendarIsVisible -->
+        <test-method signature="myxLogoIsVisible()[pri:9, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="myxLogoIsVisible" description="Check if MYX Logo is visible" finished-at="2021-02-24T23:22:36 ART" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myxLogoIsVisible -->
+        <test-method signature="openMenu()[pri:30, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:36 ART" name="openMenu" description="Open and Close Menu functionality" finished-at="2021-02-24T23:22:37 ART" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMenu -->
+        <test-method signature="openMenuCheckProfiles()[pri:31, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:37 ART" name="openMenuCheckProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T23:22:39 ART" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMenuCheckProfiles -->
+        <test-method signature="openMenuSwitchProfiles()[pri:32, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:39 ART" name="openMenuSwitchProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T23:22:48 ART" duration-ms="9502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMenuSwitchProfiles -->
+        <test-method signature="openMenuCheckAddUser()[pri:33, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:48 ART" name="openMenuCheckAddUser" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T23:22:50 ART" duration-ms="1757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMenuCheckAddUser -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.HomeScreenActiveAccountCases@5e39850]" started-at="2021-02-24T23:22:50 ART" name="TearDown" finished-at="2021-02-24T23:22:50 ART" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- testCases.ManageProfilesCases -->
+      </class> <!-- testCases.HomeScreenActiveAccountCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

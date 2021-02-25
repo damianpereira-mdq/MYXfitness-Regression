@@ -3,21 +3,52 @@
 <suite configfailurepolicy="continue" name="Failed suite [MYXfitness Regression Test]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="MYXfitness Resgression Test Classes(failed)" verbose="0">
     <classes>
-      <class name="testCases.HomeScreenCases">
+      <class name="testCases.ManageProfilesCases">
         <methods>
-          <include name="openMenuCheckAddUser"/>
+          <include name="editManageProfilesBack"/>
           <include name="TearDown"/>
+          <include name="openManageProfiles"/>
           <include name="startConnection"/>
+          <include name="editManageProfiles"/>
         </methods>
-      </class> <!-- testCases.HomeScreenCases -->
+      </class> <!-- testCases.ManageProfilesCases -->
       <class name="testCases.LogInCases">
         <methods>
+          <include name="welcomeisDisplayed"/>
+          <include name="passwordRecoveryWrongEmail"/>
+          <include name="invalidEmail"/>
+          <include name="noEmailAndPassword"/>
           <include name="TearDown"/>
+          <include name="theRoadisDisplayed"/>
           <include name="goToLoginScreen"/>
           <include name="invalidPassword"/>
+          <include name="passwordRecoveryEmpty"/>
+          <include name="validEmailAndPassword"/>
           <include name="startConnection"/>
+          <include name="passwordRecoveryzValid"/>
+          <include name="iDontHaveAccount"/>
         </methods>
       </class> <!-- testCases.LogInCases -->
+      <class name="testCases.HomeScreenActiveAccountCases">
+        <methods>
+          <include name="TearDown"/>
+          <include name="bikeFilterIsVisible"/>
+          <include name="openMenuCheckAddUser"/>
+          <include name="openMenuCheckProfiles"/>
+          <include name="accountNameIsVisible"/>
+          <include name="openMenu"/>
+          <include name="openMenuSwitchProfiles"/>
+          <include name="startConnection"/>
+          <include name="profileHeaderIsVisible"/>
+        </methods>
+      </class> <!-- testCases.HomeScreenActiveAccountCases -->
+      <class name="testCases.WhosWorkingCases">
+        <methods>
+          <include name="TearDown"/>
+          <include name="startConnection"/>
+          <include name="validateOptionsAvailable"/>
+        </methods>
+      </class> <!-- testCases.WhosWorkingCases -->
     </classes>
   </test> <!-- MYXfitness Resgression Test Classes(failed) -->
 </suite> <!-- Failed suite [MYXfitness Regression Test] -->

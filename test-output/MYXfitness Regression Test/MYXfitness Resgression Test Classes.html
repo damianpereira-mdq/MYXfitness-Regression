@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MYXfitness Resgression Test Classes</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 18 14:03:21 ART 2021</td>
+<td>Started on:</td><td>Wed Feb 24 13:02:47 ART 2021</td>
 </tr>
-<tr><td>Total time:</td><td>171 seconds (171402 ms)</td>
+<tr><td>Total time:</td><td>205 seconds (205300 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.ManageProfilesCases.editManageProfiles(ManageProfilesCases.java:160)
+<td title='testCases.HomeScreenCases.openMenuCheckAddUser()'><b>openMenuCheckAddUser</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
+*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:188)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,12 +135,38 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1043170851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1043170851'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at testCases.ManageProfilesCases.editManageProfiles(ManageProfilesCases.java:160)
+</pre></div><a href='#' onClick='toggleBox("stack-trace11529827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11529827'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
+*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:188)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,8 +196,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>46</td>
-<td>testCases.ManageProfilesCases@60e5272</td></tr>
+<td>22</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,80 +207,95 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testCases.HomeScreenCases.accountNameIsVisible()'><b>accountNameIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if Account Name is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
+<tr>
+<td title='testCases.HomeScreenCases.bikeFilterIsVisible()'><b>bikeFilterIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if Bike Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
+<tr>
+<td title='testCases.ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
+<td></td>
+<td>48</td>
+<td>testCases.ManageProfilesCases@173373b4</td></tr>
+<tr>
 <td title='testCases.ManageProfilesCases.editManageProfilesBack()'><b>editManageProfilesBack</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles back to default information.</td>
 <td></td>
-<td>44</td>
-<td>testCases.ManageProfilesCases@60e5272</td></tr>
+<td>54</td>
+<td>testCases.ManageProfilesCases@173373b4</td></tr>
 <tr>
 <td title='testCases.LogInCases.iDontHaveAccount()'><b>iDontHaveAccount</b><br>Test class: testCases.LogInCases<br>Test method: Customer selects the option 'I don't have an account'.</td>
 <td></td>
 <td>2</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.LogInCases.invalidEmail()'><b>invalidEmail</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong email.</td>
 <td></td>
-<td>7</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>11</td>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.LogInCases.invalidPassword()'><b>invalidPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong password.</td>
 <td></td>
 <td>4</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.LogInCases.noEmailAndPassword()'><b>noEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with an empty email and password.</td>
 <td></td>
-<td>3</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>2</td>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.ManageProfilesCases.openManageProfiles()'><b>openManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Open Manage Profiles</td>
 <td></td>
-<td>8</td>
-<td>testCases.ManageProfilesCases@60e5272</td></tr>
+<td>13</td>
+<td>testCases.ManageProfilesCases@173373b4</td></tr>
 <tr>
 <td title='testCases.HomeScreenCases.openMenu()'><b>openMenu</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open and Close Menu functionality</td>
 <td></td>
-<td>4</td>
-<td>testCases.HomeScreenCases@78de58ea</td></tr>
-<tr>
-<td title='testCases.HomeScreenCases.openMenuCheckAddUser()'><b>openMenuCheckAddUser</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
-<td></td>
-<td>3</td>
-<td>testCases.HomeScreenCases@78de58ea</td></tr>
+<td>0</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
 <tr>
 <td title='testCases.HomeScreenCases.openMenuCheckProfiles()'><b>openMenuCheckProfiles</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
 <td></td>
 <td>1</td>
-<td>testCases.HomeScreenCases@78de58ea</td></tr>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
 <tr>
 <td title='testCases.HomeScreenCases.openMenuSwitchProfiles()'><b>openMenuSwitchProfiles</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
 <td></td>
-<td>8</td>
-<td>testCases.HomeScreenCases@78de58ea</td></tr>
+<td>9</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
 <tr>
 <td title='testCases.LogInCases.passwordRecoveryEmpty()'><b>passwordRecoveryEmpty</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
 <td></td>
 <td>3</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.LogInCases.passwordRecoveryWrongEmail()'><b>passwordRecoveryWrongEmail</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered an invalid email.</td>
 <td></td>
-<td>7</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>5</td>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.LogInCases.passwordRecoveryzValid()'><b>passwordRecoveryzValid</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
 <td></td>
 <td>5</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>testCases.LogInCases@7d755813</td></tr>
+<tr>
+<td title='testCases.HomeScreenCases.profileHeaderIsVisible()'><b>profileHeaderIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if 'Profile Header' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.HomeScreenCases@63da207f</td></tr>
 <tr>
 <td title='testCases.LogInCases.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Valid login scenario with a valid email and password.</td>
 <td></td>
-<td>5</td>
-<td>testCases.LogInCases@7551da2a</td></tr>
+<td>6</td>
+<td>testCases.LogInCases@7d755813</td></tr>
 <tr>
 <td title='testCases.WhosWorkingCases.validateOptionsAvailable()'><b>validateOptionsAvailable</b><br>Test class: testCases.WhosWorkingCases</td>
 <td></td>
-<td>13</td>
-<td>testCases.WhosWorkingCases@432034a</td></tr>
+<td>11</td>
+<td>testCases.WhosWorkingCases@69c93ca4</td></tr>
 </table><p>
 </body>
 </html>

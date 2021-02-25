@@ -18,7 +18,7 @@ public class WhosWorkingCases extends SetupConnection {
 	public void validateOptionsAvailable () throws InterruptedException {
 		
 		driver.findElementByXPath("(//android.widget.ImageView[@content-desc=\"image\"])[1]").click();
-		Thread.sleep(10000);
+		//Thread.sleep(10000);
 		
 	}
 	
