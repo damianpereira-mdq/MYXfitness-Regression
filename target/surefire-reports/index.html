@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MYXfitness_Regression_Test" class="navigator-link">
-              <span class="suite-name border-passed">MYXfitness Regression Test</span>
+              <span class="suite-name border-failed">MYXfitness Regression Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">48 methods, 1 failed,  3 skipped,  44 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MYXfitness_Regression_Test" class="hide-methods failed suite-MYXfitness_Regression_Test"> (hide)</a> <!-- hide-methods failed suite-MYXfitness_Regression_Test -->
+                      <a href="#" panel-name="suite-MYXfitness_Regression_Test" class="show-methods failed suite-MYXfitness_Regression_Test"> (show)</a> <!-- show-methods failed suite-MYXfitness_Regression_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-MYXfitness_Regression_Test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MYXfitness_Regression_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-MYXfitness_Regression_Test" class="hide-methods skipped suite-MYXfitness_Regression_Test"> (hide)</a> <!-- hide-methods skipped suite-MYXfitness_Regression_Test -->
+                      <a href="#" panel-name="suite-MYXfitness_Regression_Test" class="show-methods skipped suite-MYXfitness_Regression_Test"> (show)</a> <!-- show-methods skipped suite-MYXfitness_Regression_Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-MYXfitness_Regression_Test">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-MYXfitness_Regression_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,107 +142,222 @@
                     <div class="method-list-content passed suite-MYXfitness_Regression_Test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="accountNameIsVisible">accountNameIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="accountNameIsVisible">accountNameIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="bikeFilterIsVisible">bikeFilterIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="addUserisDisplayed">addUserisDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.ManageProfilesCases" class="method navigator-link" hash-for-method="editManageProfiles">editManageProfiles</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="bikeFilterIsVisible">bikeFilterIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.ManageProfilesCases" class="method navigator-link" hash-for-method="editManageProfilesBack">editManageProfilesBack</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="blaDisplayed">blaDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="iDontHaveAccount">iDontHaveAccount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="calendarIsVisible">calendarIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="invalidEmail">invalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S004ManageProfilesCases" class="method navigator-link" hash-for-method="changeMainProfilePicture">changeMainProfilePicture</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="invalidPassword">invalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="clickAddUser">clickAddUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="noEmailAndPassword">noEmailAndPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="createProfileIsDisplayed">createProfileIsDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.ManageProfilesCases" class="method navigator-link" hash-for-method="openManageProfiles">openManageProfiles</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="crossTrainingFilterIsVisible">crossTrainingFilterIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenu">openMenu</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="declineTC">declineTC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuCheckAddUser">openMenuCheckAddUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S004ManageProfilesCases" class="method navigator-link" hash-for-method="editManageProfiles">editManageProfiles</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuCheckProfiles">openMenuCheckProfiles</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S004ManageProfilesCases" class="method navigator-link" hash-for-method="editManageProfilesBack">editManageProfilesBack</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuSwitchProfiles">openMenuSwitchProfiles</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="emailFieldIsVisible">emailFieldIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryEmpty">passwordRecoveryEmpty</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="enterInvalidEmail">enterInvalidEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryWrongEmail">passwordRecoveryWrongEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="enterLastName">enterLastName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryzValid">passwordRecoveryzValid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="enterName">enterName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="profileHeaderIsVisible">profileHeaderIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="firstNameFieldIsVisible">firstNameFieldIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="theRoadisDisplayed">theRoadisDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="floorFilterIsVisible">floorFilterIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="validEmailAndPassword">validEmailAndPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="iDontHaveAccount">iDontHaveAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.WhosWorkingCases" class="method navigator-link" hash-for-method="validateOptionsAvailable">validateOptionsAvailable</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="invalidEmail">invalidEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="invalidPassword">invalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="lastNameFieldIsVisible">lastNameFieldIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="mainProfileisDisplayed">mainProfileisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="myxLogoIsVisible">myxLogoIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="myxMediaIsVisible">myxMediaIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="noEmailAndPassword">noEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S004ManageProfilesCases" class="method navigator-link" hash-for-method="openManageProfiles">openManageProfiles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenu">openMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="openMenuClickAddUser">openMenuClickAddUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryEmpty">passwordRecoveryEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryWrongEmail">passwordRecoveryWrongEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryzValid">passwordRecoveryzValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="pictureIconIsDisplayed">pictureIconIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="profileHeaderIsVisible">profileHeaderIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="profileTitleisDisplayed">profileTitleisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="recoveryFilterIsVisible">recoveryFilterIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S003HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="smartMYXIsVisible">smartMYXIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="termsAndConditionsContentIsVisible">termsAndConditionsContentIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="termsAndConditionsContentTestIsVisible">termsAndConditionsContentTestIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S005AddProfileMainScreenCases" class="method navigator-link" hash-for-method="termsAndConditionsTitleIsVisible">termsAndConditionsTitleIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="theRoadisDisplayed">theRoadisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="validEmailAndPassword">validEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="validateOptionsAvailable">validateOptionsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MYXfitness_Regression_Test" title="testCases.S002WhosWorkingCases" class="method navigator-link" hash-for-method="whosWorkingOutTitleisDisplayed">whosWorkingOutTitleisDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MYXfitness_Regression_Test -->
@@ -219,10 +372,148 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MYXfitness_Regression_Test" class="panel MYXfitness_Regression_Test">
+          <div class="suite-MYXfitness_Regression_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.S001LogInCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="welcomeisDisplayed">
+                  </a> <!-- welcomeisDisplayed -->
+                  <span class="method-name">welcomeisDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(First screen 'Welcome to MYX' is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MYXfitness_Regression_Test-class-failed -->
+          <div class="suite-MYXfitness_Regression_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.S001LogInCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="welcomeisDisplayed">
+                  </a> <!-- welcomeisDisplayed -->
+                  <span class="method-name">welcomeisDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(First screen 'Welcome to MYX' is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="welcomeisDisplayed">
+                  </a> <!-- welcomeisDisplayed -->
+                  <span class="method-name">welcomeisDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(First screen 'Welcome to MYX' is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="welcomeisDisplayed">
+                  </a> <!-- welcomeisDisplayed -->
+                  <span class="method-name">welcomeisDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(First screen 'Welcome to MYX' is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MYXfitness_Regression_Test-class-skipped -->
           <div class="suite-MYXfitness_Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.HomeScreenActiveAccountCases</span>
+              <span class="class-name">testCases.S002WhosWorkingCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUserisDisplayed">
+                  </a> <!-- addUserisDisplayed -->
+                  <span class="method-name">addUserisDisplayed</span>
+                  <em>
+('Add User' option is displayed and clickable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickAddUser">
+                  </a> <!-- clickAddUser -->
+                  <span class="method-name">clickAddUser</span>
+                  <em>
+(Click 'add User' and go back to the 'Who's working out today' screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mainProfileisDisplayed">
+                  </a> <!-- mainProfileisDisplayed -->
+                  <span class="method-name">mainProfileisDisplayed</span>
+                  <em>
+(Main profile is displayed and clickable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="profileTitleisDisplayed">
+                  </a> <!-- profileTitleisDisplayed -->
+                  <span class="method-name">profileTitleisDisplayed</span>
+                  <em>
+(Who's working out today screen: PROFILE title is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateOptionsAvailable">
+                  </a> <!-- validateOptionsAvailable -->
+                  <span class="method-name">validateOptionsAvailable</span>
+                  <em>
+(Select MAIN profile to LOGIN)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="whosWorkingOutTitleisDisplayed">
+                  </a> <!-- whosWorkingOutTitleisDisplayed -->
+                  <span class="method-name">whosWorkingOutTitleisDisplayed</span>
+                  <em>
+('Who's working out today' title is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MYXfitness_Regression_Test-class-passed -->
+          <div class="suite-MYXfitness_Regression_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.S003HomeScreenActiveAccountCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -245,38 +536,56 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="calendarIsVisible">
+                  </a> <!-- calendarIsVisible -->
+                  <span class="method-name">calendarIsVisible</span>
+                  <em>
+(Check if calendar icon is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="crossTrainingFilterIsVisible">
+                  </a> <!-- crossTrainingFilterIsVisible -->
+                  <span class="method-name">crossTrainingFilterIsVisible</span>
+                  <em>
+(Check if Cross-Training Filter is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="floorFilterIsVisible">
+                  </a> <!-- floorFilterIsVisible -->
+                  <span class="method-name">floorFilterIsVisible</span>
+                  <em>
+(Check if Floor Filter is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myxLogoIsVisible">
+                  </a> <!-- myxLogoIsVisible -->
+                  <span class="method-name">myxLogoIsVisible</span>
+                  <em>
+(Check if MYX Logo is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="myxMediaIsVisible">
+                  </a> <!-- myxMediaIsVisible -->
+                  <span class="method-name">myxMediaIsVisible</span>
+                  <em>
+(Check if MYX Media is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="openMenu">
                   </a> <!-- openMenu -->
                   <span class="method-name">openMenu</span>
                   <em>
 (Open and Close Menu functionality)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openMenuCheckAddUser">
-                  </a> <!-- openMenuCheckAddUser -->
-                  <span class="method-name">openMenuCheckAddUser</span>
-                  <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openMenuCheckProfiles">
-                  </a> <!-- openMenuCheckProfiles -->
-                  <span class="method-name">openMenuCheckProfiles</span>
-                  <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openMenuSwitchProfiles">
-                  </a> <!-- openMenuSwitchProfiles -->
-                  <span class="method-name">openMenuSwitchProfiles</span>
-                  <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -288,12 +597,30 @@
 (Check if 'Profile Header' is visible)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="recoveryFilterIsVisible">
+                  </a> <!-- recoveryFilterIsVisible -->
+                  <span class="method-name">recoveryFilterIsVisible</span>
+                  <em>
+(Check if Recovery Filter is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smartMYXIsVisible">
+                  </a> <!-- smartMYXIsVisible -->
+                  <span class="method-name">smartMYXIsVisible</span>
+                  <em>
+(Check if Smart MYX is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-MYXfitness_Regression_Test-class-passed -->
           <div class="suite-MYXfitness_Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.LogInCases</span>
+              <span class="class-name">testCases.S001LogInCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -377,13 +704,136 @@
 (Valid login scenario with a valid email and password.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MYXfitness_Regression_Test-class-passed -->
+          <div class="suite-MYXfitness_Regression_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.S005AddProfileMainScreenCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="welcomeisDisplayed">
-                  </a> <!-- welcomeisDisplayed -->
-                  <span class="method-name">welcomeisDisplayed</span>
+                  <a name="blaDisplayed">
+                  </a> <!-- blaDisplayed -->
+                  <span class="method-name">blaDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createProfileIsDisplayed">
+                  </a> <!-- createProfileIsDisplayed -->
+                  <span class="method-name">createProfileIsDisplayed</span>
                   <em>
-(First screen 'Welcome to MYX' is displayed)                  </em>
+(Check if 'Create Profile' title is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="declineTC">
+                  </a> <!-- declineTC -->
+                  <span class="method-name">declineTC</span>
+                  <em>
+(Decline T&C)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldIsVisible">
+                  </a> <!-- emailFieldIsVisible -->
+                  <span class="method-name">emailFieldIsVisible</span>
+                  <em>
+(Check if 'Email' is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterInvalidEmail">
+                  </a> <!-- enterInvalidEmail -->
+                  <span class="method-name">enterInvalidEmail</span>
+                  <em>
+(Enter invalid Email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterLastName">
+                  </a> <!-- enterLastName -->
+                  <span class="method-name">enterLastName</span>
+                  <em>
+(Enter Last Name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterName">
+                  </a> <!-- enterName -->
+                  <span class="method-name">enterName</span>
+                  <em>
+(Enter Name)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="firstNameFieldIsVisible">
+                  </a> <!-- firstNameFieldIsVisible -->
+                  <span class="method-name">firstNameFieldIsVisible</span>
+                  <em>
+(Check if 'First Name' is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lastNameFieldIsVisible">
+                  </a> <!-- lastNameFieldIsVisible -->
+                  <span class="method-name">lastNameFieldIsVisible</span>
+                  <em>
+(Check if 'Last Name' is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openMenuClickAddUser">
+                  </a> <!-- openMenuClickAddUser -->
+                  <span class="method-name">openMenuClickAddUser</span>
+                  <em>
+(Select 'add profile' from the menu on the Main Screen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pictureIconIsDisplayed">
+                  </a> <!-- pictureIconIsDisplayed -->
+                  <span class="method-name">pictureIconIsDisplayed</span>
+                  <em>
+(Check if 'Photo' icon is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="termsAndConditionsContentIsVisible">
+                  </a> <!-- termsAndConditionsContentIsVisible -->
+                  <span class="method-name">termsAndConditionsContentIsVisible</span>
+                  <em>
+(Check if 'T&C' content title is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="termsAndConditionsContentTestIsVisible">
+                  </a> <!-- termsAndConditionsContentTestIsVisible -->
+                  <span class="method-name">termsAndConditionsContentTestIsVisible</span>
+                  <em>
+(Check if 'T&C' content text is visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="termsAndConditionsTitleIsVisible">
+                  </a> <!-- termsAndConditionsTitleIsVisible -->
+                  <span class="method-name">termsAndConditionsTitleIsVisible</span>
+                  <em>
+(Check if 'T&C' title is visible)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -391,9 +841,18 @@
           <div class="suite-MYXfitness_Regression_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.ManageProfilesCases</span>
+              <span class="class-name">testCases.S004ManageProfilesCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeMainProfilePicture">
+                  </a> <!-- changeMainProfilePicture -->
+                  <span class="method-name">changeMainProfilePicture</span>
+                  <em>
+(Take a profile picture)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="editManageProfiles">
@@ -423,21 +882,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-MYXfitness_Regression_Test-class-passed -->
-          <div class="suite-MYXfitness_Regression_Test-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.WhosWorkingCases</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateOptionsAvailable">
-                  </a> <!-- validateOptionsAvailable -->
-                  <span class="method-name">validateOptionsAvailable</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MYXfitness_Regression_Test-class-passed -->
         </div> <!-- panel MYXfitness_Regression_Test -->
         <div panel-name="test-xml-MYXfitness_Regression_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -447,13 +891,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;MYXfitness Regression Test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;MYXfitness Regression Test&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestAllureListener&quot;/&gt;
+    &lt;listener class-name=&quot;listeners.Transform&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;MYXfitness Resgression Test Classes&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.LogInCases&quot;/&gt;
-      &lt;class name=&quot;testCases.WhosWorkingCases&quot;/&gt;
-      &lt;class name=&quot;testCases.HomeScreenActiveAccountCases&quot;/&gt;
-      &lt;class name=&quot;testCases.ManageProfilesCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S001LogInCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S002WhosWorkingCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S003HomeScreenActiveAccountCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S004ManageProfilesCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S005AddProfileMainScreenCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MYXfitness Resgression Test Classes --&gt;
 &lt;/suite&gt; &lt;!-- MYXfitness Regression Test --&gt;
@@ -467,7 +916,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">MYXfitness Resgression Test Classes (4 classes)</span>
+                <span class="test-name">MYXfitness Resgression Test Classes (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -493,96 +942,204 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(48);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'editManageProfiles')
-data.setCell(0, 2, 'testCases.ManageProfilesCases')
-data.setCell(0, 3, 46344);
+data.setCell(0, 2, 'testCases.S004ManageProfilesCases')
+data.setCell(0, 3, 48542);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'editManageProfilesBack')
-data.setCell(1, 2, 'testCases.ManageProfilesCases')
-data.setCell(1, 3, 44444);
+data.setCell(1, 2, 'testCases.S004ManageProfilesCases')
+data.setCell(1, 3, 42740);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'welcomeisDisplayed')
-data.setCell(2, 2, 'testCases.LogInCases')
-data.setCell(2, 3, 12448);
+data.setCell(2, 1, 'changeMainProfilePicture')
+data.setCell(2, 2, 'testCases.S004ManageProfilesCases')
+data.setCell(2, 3, 13372);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'openManageProfiles')
-data.setCell(3, 2, 'testCases.ManageProfilesCases')
-data.setCell(3, 3, 11081);
+data.setCell(3, 2, 'testCases.S004ManageProfilesCases')
+data.setCell(3, 3, 8191);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'profileHeaderIsVisible')
-data.setCell(4, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(4, 3, 9200);
+data.setCell(4, 1, 'declineTC')
+data.setCell(4, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(4, 3, 8131);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'openMenuSwitchProfiles')
-data.setCell(5, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(5, 3, 8830);
+data.setCell(5, 1, 'enterInvalidEmail')
+data.setCell(5, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(5, 3, 6562);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidEmail')
-data.setCell(6, 2, 'testCases.LogInCases')
-data.setCell(6, 3, 7289);
+data.setCell(6, 1, 'validEmailAndPassword')
+data.setCell(6, 2, 'testCases.S001LogInCases')
+data.setCell(6, 3, 6310);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'passwordRecoveryWrongEmail')
-data.setCell(7, 2, 'testCases.LogInCases')
-data.setCell(7, 3, 7182);
+data.setCell(7, 1, 'invalidEmail')
+data.setCell(7, 2, 'testCases.S001LogInCases')
+data.setCell(7, 3, 5989);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validEmailAndPassword')
-data.setCell(8, 2, 'testCases.LogInCases')
-data.setCell(8, 3, 5638);
+data.setCell(8, 1, 'passwordRecoveryWrongEmail')
+data.setCell(8, 2, 'testCases.S001LogInCases')
+data.setCell(8, 3, 5928);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'passwordRecoveryzValid')
-data.setCell(9, 2, 'testCases.LogInCases')
-data.setCell(9, 3, 5189);
+data.setCell(9, 1, 'profileHeaderIsVisible')
+data.setCell(9, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(9, 3, 5763);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'invalidPassword')
-data.setCell(10, 2, 'testCases.LogInCases')
-data.setCell(10, 3, 4671);
+data.setCell(10, 1, 'passwordRecoveryzValid')
+data.setCell(10, 2, 'testCases.S001LogInCases')
+data.setCell(10, 3, 5519);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'passwordRecoveryEmpty')
-data.setCell(11, 2, 'testCases.LogInCases')
-data.setCell(11, 3, 3468);
+data.setCell(11, 1, 'openMenuClickAddUser')
+data.setCell(11, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(11, 3, 4603);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'noEmailAndPassword')
-data.setCell(12, 2, 'testCases.LogInCases')
-data.setCell(12, 3, 2897);
+data.setCell(12, 1, 'invalidPassword')
+data.setCell(12, 2, 'testCases.S001LogInCases')
+data.setCell(12, 3, 4339);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'validateOptionsAvailable')
-data.setCell(13, 2, 'testCases.WhosWorkingCases')
-data.setCell(13, 3, 2853);
+data.setCell(13, 1, 'passwordRecoveryEmpty')
+data.setCell(13, 2, 'testCases.S001LogInCases')
+data.setCell(13, 3, 3654);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'iDontHaveAccount')
-data.setCell(14, 2, 'testCases.LogInCases')
-data.setCell(14, 3, 2665);
+data.setCell(14, 1, 'noEmailAndPassword')
+data.setCell(14, 2, 'testCases.S001LogInCases')
+data.setCell(14, 3, 3157);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'openMenuCheckProfiles')
-data.setCell(15, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(15, 3, 1983);
+data.setCell(15, 1, 'termsAndConditionsContentIsVisible')
+data.setCell(15, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(15, 3, 2681);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'openMenuCheckAddUser')
-data.setCell(16, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(16, 3, 1196);
+data.setCell(16, 1, 'iDontHaveAccount')
+data.setCell(16, 2, 'testCases.S001LogInCases')
+data.setCell(16, 3, 2636);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'openMenu')
-data.setCell(17, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(17, 3, 867);
+data.setCell(17, 1, 'validateOptionsAvailable')
+data.setCell(17, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(17, 3, 2341);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'theRoadisDisplayed')
-data.setCell(18, 2, 'testCases.LogInCases')
-data.setCell(18, 3, 140);
+data.setCell(18, 1, 'clickAddUser')
+data.setCell(18, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(18, 3, 1972);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'accountNameIsVisible')
-data.setCell(19, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(19, 3, 115);
+data.setCell(19, 1, 'mainProfileisDisplayed')
+data.setCell(19, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(19, 3, 1360);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'bikeFilterIsVisible')
-data.setCell(20, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(20, 3, 102);
+data.setCell(20, 1, 'enterName')
+data.setCell(20, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(20, 3, 1145);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'enterLastName')
+data.setCell(21, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(21, 3, 1105);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'openMenu')
+data.setCell(22, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(22, 3, 792);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'blaDisplayed')
+data.setCell(23, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(23, 3, 751);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'createProfileIsDisplayed')
+data.setCell(24, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(24, 3, 722);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'firstNameFieldIsVisible')
+data.setCell(25, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(25, 3, 627);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'termsAndConditionsContentTestIsVisible')
+data.setCell(26, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(26, 3, 561);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'lastNameFieldIsVisible')
+data.setCell(27, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(27, 3, 546);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'emailFieldIsVisible')
+data.setCell(28, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(28, 3, 527);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'pictureIconIsDisplayed')
+data.setCell(29, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(29, 3, 514);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'termsAndConditionsTitleIsVisible')
+data.setCell(30, 2, 'testCases.S005AddProfileMainScreenCases')
+data.setCell(30, 3, 513);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'welcomeisDisplayed')
+data.setCell(31, 2, 'testCases.S001LogInCases')
+data.setCell(31, 3, 244);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'theRoadisDisplayed')
+data.setCell(32, 2, 'testCases.S001LogInCases')
+data.setCell(32, 3, 171);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'bikeFilterIsVisible')
+data.setCell(33, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(33, 3, 119);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'floorFilterIsVisible')
+data.setCell(34, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(34, 3, 119);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'welcomeisDisplayed')
+data.setCell(35, 2, 'testCases.S001LogInCases')
+data.setCell(35, 3, 119);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'myxLogoIsVisible')
+data.setCell(36, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(36, 3, 113);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'recoveryFilterIsVisible')
+data.setCell(37, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(37, 3, 112);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'welcomeisDisplayed')
+data.setCell(38, 2, 'testCases.S001LogInCases')
+data.setCell(38, 3, 110);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'welcomeisDisplayed')
+data.setCell(39, 2, 'testCases.S001LogInCases')
+data.setCell(39, 3, 108);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'myxMediaIsVisible')
+data.setCell(40, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(40, 3, 105);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'calendarIsVisible')
+data.setCell(41, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(41, 3, 102);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'crossTrainingFilterIsVisible')
+data.setCell(42, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(42, 3, 102);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'smartMYXIsVisible')
+data.setCell(43, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(43, 3, 101);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'accountNameIsVisible')
+data.setCell(44, 2, 'testCases.S003HomeScreenActiveAccountCases')
+data.setCell(44, 3, 99);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'profileTitleisDisplayed')
+data.setCell(45, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(45, 3, 80);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'whosWorkingOutTitleisDisplayed')
+data.setCell(46, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(46, 3, 73);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'addUserisDisplayed')
+data.setCell(47, 2, 'testCases.S002WhosWorkingCases')
+data.setCell(47, 3, 37);
 window.suiteTableData['MYXfitness_Regression_Test']= { tableData: data, tableDiv: 'times-div-MYXfitness_Regression_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-MYXfitness_Regression_Test">
               </div> <!-- times-div-MYXfitness_Regression_Test -->
             </div> <!-- times-div -->
@@ -597,11 +1154,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-MYXfitness_Regression_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.HomeScreenActiveAccountCases</span>
+              <span class="ignored-class-name">testCases.S002WhosWorkingCases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -610,7 +1167,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.ManageProfilesCases</span>
+              <span class="ignored-class-name">testCases.S003HomeScreenActiveAccountCases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -619,7 +1176,16 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testCases.WhosWorkingCases</span>
+              <span class="ignored-class-name">testCases.S005AddProfileMainScreenCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TearDown</span>
+                <br/>
+                <span class="ignored-method-name">startConnection</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.S004ManageProfilesCases</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">TearDown</span>
                 <br/>
@@ -635,114 +1201,223 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LogInCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S001LogInCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startConnection</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">goToLoginScreen</span>
-                <span class="method-start">10456 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">welcomeisDisplayed</span>
-                <span class="method-start">10487 ms</span>
+                <span class="method-start">7581 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">welcomeisDisplayed</span>
+                <span class="method-start">7937 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">welcomeisDisplayed</span>
+                <span class="method-start">8059 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">welcomeisDisplayed</span>
+                <span class="method-start">8170 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">theRoadisDisplayed</span>
-                <span class="method-start">23027 ms</span>
+                <span class="method-start">8976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalidEmail</span>
-                <span class="method-start">23171 ms</span>
+                <span class="method-start">9149 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalidPassword</span>
-                <span class="method-start">30462 ms</span>
+                <span class="method-start">15140 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">noEmailAndPassword</span>
-                <span class="method-start">35135 ms</span>
+                <span class="method-start">19482 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passwordRecoveryEmpty</span>
-                <span class="method-start">38034 ms</span>
+                <span class="method-start">22641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passwordRecoveryWrongEmail</span>
-                <span class="method-start">41503 ms</span>
+                <span class="method-start">26297 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">passwordRecoveryzValid</span>
-                <span class="method-start">48687 ms</span>
+                <span class="method-start">32228 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">iDontHaveAccount</span>
-                <span class="method-start">53878 ms</span>
+                <span class="method-start">37749 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validEmailAndPassword</span>
-                <span class="method-start">56545 ms</span>
+                <span class="method-start">40387 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.WhosWorkingCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S002WhosWorkingCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">profileTitleisDisplayed</span>
+                <span class="method-start">46699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">whosWorkingOutTitleisDisplayed</span>
+                <span class="method-start">46781 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mainProfileisDisplayed</span>
+                <span class="method-start">46855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUserisDisplayed</span>
+                <span class="method-start">48221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickAddUser</span>
+                <span class="method-start">48260 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateOptionsAvailable</span>
-                <span class="method-start">62185 ms</span>
+                <span class="method-start">50234 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HomeScreenActiveAccountCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S003HomeScreenActiveAccountCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">profileHeaderIsVisible</span>
-                <span class="method-start">65040 ms</span>
+                <span class="method-start">52577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">accountNameIsVisible</span>
-                <span class="method-start">74241 ms</span>
+                <span class="method-start">58342 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">bikeFilterIsVisible</span>
-                <span class="method-start">74358 ms</span>
+                <span class="method-start">58443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">floorFilterIsVisible</span>
+                <span class="method-start">58564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">recoveryFilterIsVisible</span>
+                <span class="method-start">58685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">crossTrainingFilterIsVisible</span>
+                <span class="method-start">58799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">myxMediaIsVisible</span>
+                <span class="method-start">58902 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">smartMYXIsVisible</span>
+                <span class="method-start">59008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calendarIsVisible</span>
+                <span class="method-start">59110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">myxLogoIsVisible</span>
+                <span class="method-start">59213 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openMenu</span>
-                <span class="method-start">74461 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuCheckProfiles</span>
-                <span class="method-start">75330 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuSwitchProfiles</span>
-                <span class="method-start">77319 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuCheckAddUser</span>
-                <span class="method-start">86151 ms</span>
+                <span class="method-start">59327 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.ManageProfilesCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S004ManageProfilesCases</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openManageProfiles</span>
-                <span class="method-start">87349 ms</span>
+                <span class="method-start">60121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editManageProfiles</span>
-                <span class="method-start">98432 ms</span>
+                <span class="method-start">68314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editManageProfilesBack</span>
-                <span class="method-start">144778 ms</span>
+                <span class="method-start">116857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeMainProfilePicture</span>
+                <span class="method-start">159599 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.LogInCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S005AddProfileMainScreenCases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openMenuClickAddUser</span>
+                <span class="method-start">172973 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createProfileIsDisplayed</span>
+                <span class="method-start">177577 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pictureIconIsDisplayed</span>
+                <span class="method-start">178301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">emailFieldIsVisible</span>
+                <span class="method-start">178816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">firstNameFieldIsVisible</span>
+                <span class="method-start">179345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lastNameFieldIsVisible</span>
+                <span class="method-start">179974 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">termsAndConditionsTitleIsVisible</span>
+                <span class="method-start">180522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">termsAndConditionsContentIsVisible</span>
+                <span class="method-start">181036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">declineTC</span>
+                <span class="method-start">183719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">termsAndConditionsContentTestIsVisible</span>
+                <span class="method-start">191852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterName</span>
+                <span class="method-start">192415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterLastName</span>
+                <span class="method-start">193562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterInvalidEmail</span>
+                <span class="method-start">194669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">blaDisplayed</span>
+                <span class="method-start">201232 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.S001LogInCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">189257 ms</span>
+                <span class="method-start">202024 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

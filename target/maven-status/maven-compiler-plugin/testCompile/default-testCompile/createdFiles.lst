@@ -1,5 +1,10 @@
-testCases\ManageProfilesCases.class
-testCases\WhosWorkingCases.class
-testCases\LogInCases.class
-testCases\HomeScreenActiveAccountCases.class
+listeners\TestAllureListener.class
+testCases\S004ManageProfilesCases.class
+listeners\Transform.class
+testCases\S001LogInCases.class
 testCases\SetupConnection.class
+listeners\TestAllureListener2.class
+listeners\RetryFailedTestCases.class
+testCases\S005AddProfileMainScreenCases.class
+testCases\S002WhosWorkingCases.class
+testCases\S003HomeScreenActiveAccountCases.class

@@ -1,115 +1,405 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="27" passed="21" failed="0" skipped="0">
+<testng-results retried="3" ignored="8" total="56" passed="44" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-24T21:50:38 ART" name="MYXfitness Regression Test" finished-at="2021-02-24T21:53:36 ART" duration-ms="178769">
+  <suite started-at="2021-03-04T00:53:11 ART" name="MYXfitness Regression Test" finished-at="2021-03-04T00:56:25 ART" duration-ms="194445">
     <groups>
     </groups>
-    <test started-at="2021-02-24T21:50:38 ART" name="MYXfitness Resgression Test Classes" finished-at="2021-02-24T21:53:36 ART" duration-ms="178769">
-      <class name="testCases.LogInCases">
-        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:27 ART" name="startConnection" finished-at="2021-02-24T21:50:38 ART" duration-ms="10452" status="PASS">
+    <test started-at="2021-03-04T00:53:11 ART" name="MYXfitness Resgression Test Classes" finished-at="2021-03-04T00:56:25 ART" duration-ms="194445">
+      <class name="testCases.S002WhosWorkingCases">
+        <test-method signature="profileTitleisDisplayed()[pri:0, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:50 ART" name="profileTitleisDisplayed" description="Who&#039;s working out today screen: PROFILE title is displayed" finished-at="2021-03-04T00:53:50 ART" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startConnection -->
-        <test-method is-config="true" signature="goToLoginScreen()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:38 ART" name="goToLoginScreen" finished-at="2021-02-24T21:50:38 ART" duration-ms="1" status="PASS">
+        </test-method> <!-- profileTitleisDisplayed -->
+        <test-method signature="whosWorkingOutTitleisDisplayed()[pri:1, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:50 ART" name="whosWorkingOutTitleisDisplayed" description="&#039;Who&#039;s working out today&#039; title is displayed" finished-at="2021-03-04T00:53:50 ART" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToLoginScreen -->
-        <test-method signature="welcomeisDisplayed()[pri:-2, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:38 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-02-24T21:50:50 ART" duration-ms="12448" status="PASS">
+        </test-method> <!-- whosWorkingOutTitleisDisplayed -->
+        <test-method signature="mainProfileisDisplayed()[pri:2, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:50 ART" name="mainProfileisDisplayed" description="Main profile is displayed and clickable" finished-at="2021-03-04T00:53:52 ART" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- welcomeisDisplayed -->
-        <test-method signature="theRoadisDisplayed()[pri:-1, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:50 ART" name="theRoadisDisplayed" description="First screen &#039;The road...&#039; is displayed" finished-at="2021-02-24T21:50:50 ART" duration-ms="140" status="PASS">
+        </test-method> <!-- mainProfileisDisplayed -->
+        <test-method signature="addUserisDisplayed()[pri:3, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:52 ART" name="addUserisDisplayed" description="&#039;Add User&#039; option is displayed and clickable" finished-at="2021-03-04T00:53:52 ART" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- theRoadisDisplayed -->
-        <test-method signature="invalidEmail()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:50 ART" name="invalidEmail" description="Invalid login scenario with a wrong email." finished-at="2021-02-24T21:50:58 ART" duration-ms="7289" status="PASS">
+        </test-method> <!-- addUserisDisplayed -->
+        <test-method signature="clickAddUser()[pri:4, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:52 ART" name="clickAddUser" description="Click &#039;add User&#039; and go back to the &#039;Who&#039;s working out today&#039; screen" finished-at="2021-03-04T00:53:54 ART" duration-ms="1972" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidEmail -->
-        <test-method signature="invalidPassword()[pri:1, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:50:58 ART" name="invalidPassword" description="Invalid login scenario with a wrong password." finished-at="2021-02-24T21:51:02 ART" duration-ms="4671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidPassword -->
-        <test-method signature="noEmailAndPassword()[pri:2, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:02 ART" name="noEmailAndPassword" description="Invalid login scenario with an empty email and password." finished-at="2021-02-24T21:51:05 ART" duration-ms="2897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noEmailAndPassword -->
-        <test-method signature="passwordRecoveryEmpty()[pri:3, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:05 ART" name="passwordRecoveryEmpty" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-24T21:51:09 ART" duration-ms="3468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordRecoveryEmpty -->
-        <test-method signature="passwordRecoveryWrongEmail()[pri:4, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:09 ART" name="passwordRecoveryWrongEmail" description="Customer wants to reset the password, but entered an invalid email." finished-at="2021-02-24T21:51:16 ART" duration-ms="7182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordRecoveryWrongEmail -->
-        <test-method signature="passwordRecoveryzValid()[pri:5, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:16 ART" name="passwordRecoveryzValid" description="Customer wants to reset the password, but entered no email." finished-at="2021-02-24T21:51:21 ART" duration-ms="5189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- passwordRecoveryzValid -->
-        <test-method signature="iDontHaveAccount()[pri:6, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:21 ART" name="iDontHaveAccount" description="Customer selects the option &#039;I don&#039;t have an account&#039;." finished-at="2021-02-24T21:51:24 ART" duration-ms="2665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iDontHaveAccount -->
-        <test-method signature="validEmailAndPassword()[pri:7, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:51:24 ART" name="validEmailAndPassword" description="Valid login scenario with a valid email and password." finished-at="2021-02-24T21:51:29 ART" duration-ms="5638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validEmailAndPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.LogInCases@6a4d7f76]" started-at="2021-02-24T21:53:36 ART" name="TearDown" finished-at="2021-02-24T21:53:36 ART" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- testCases.LogInCases -->
-      <class name="testCases.WhosWorkingCases">
-        <test-method signature="validateOptionsAvailable()[pri:0, instance:testCases.WhosWorkingCases@10ec523c]" started-at="2021-02-24T21:51:29 ART" name="validateOptionsAvailable" finished-at="2021-02-24T21:51:32 ART" duration-ms="2853" status="PASS">
+        </test-method> <!-- clickAddUser -->
+        <test-method signature="validateOptionsAvailable()[pri:5, instance:testCases.S002WhosWorkingCases@19b047fe]" started-at="2021-03-04T00:53:54 ART" name="validateOptionsAvailable" description="Select MAIN profile to LOGIN" finished-at="2021-03-04T00:53:56 ART" duration-ms="2341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateOptionsAvailable -->
-      </class> <!-- testCases.WhosWorkingCases -->
-      <class name="testCases.HomeScreenActiveAccountCases">
-        <test-method signature="profileHeaderIsVisible()[pri:1, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:32 ART" name="profileHeaderIsVisible" description="Check if &#039;Profile Header&#039; is visible" finished-at="2021-02-24T21:51:41 ART" duration-ms="9200" status="PASS">
+      </class> <!-- testCases.S002WhosWorkingCases -->
+      <class name="testCases.S003HomeScreenActiveAccountCases">
+        <test-method signature="profileHeaderIsVisible()[pri:1, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:53:56 ART" name="profileHeaderIsVisible" description="Check if &#039;Profile Header&#039; is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="5763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileHeaderIsVisible -->
-        <test-method signature="accountNameIsVisible()[pri:2, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:41 ART" name="accountNameIsVisible" description="Check if Account Name is visible" finished-at="2021-02-24T21:51:42 ART" duration-ms="115" status="PASS">
+        <test-method signature="accountNameIsVisible()[pri:2, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="accountNameIsVisible" description="Check if Account Name is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountNameIsVisible -->
-        <test-method signature="bikeFilterIsVisible()[pri:3, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:42 ART" name="bikeFilterIsVisible" description="Check if Bike Filter is visible" finished-at="2021-02-24T21:51:42 ART" duration-ms="102" status="PASS">
+        <test-method signature="bikeFilterIsVisible()[pri:3, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="bikeFilterIsVisible" description="Check if Bike Filter is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bikeFilterIsVisible -->
-        <test-method signature="openMenu()[pri:30, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:42 ART" name="openMenu" description="Open and Close Menu functionality" finished-at="2021-02-24T21:51:43 ART" duration-ms="867" status="PASS">
+        <test-method signature="floorFilterIsVisible()[pri:4, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="floorFilterIsVisible" description="Check if Floor Filter is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- floorFilterIsVisible -->
+        <test-method signature="recoveryFilterIsVisible()[pri:5, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="recoveryFilterIsVisible" description="Check if Recovery Filter is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recoveryFilterIsVisible -->
+        <test-method signature="crossTrainingFilterIsVisible()[pri:6, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="crossTrainingFilterIsVisible" description="Check if Cross-Training Filter is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crossTrainingFilterIsVisible -->
+        <test-method signature="myxMediaIsVisible()[pri:7, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="myxMediaIsVisible" description="Check if MYX Media is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myxMediaIsVisible -->
+        <test-method signature="smartMYXIsVisible()[pri:8, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="smartMYXIsVisible" description="Check if Smart MYX is visible" finished-at="2021-03-04T00:54:02 ART" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smartMYXIsVisible -->
+        <test-method signature="calendarIsVisible()[pri:9, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:02 ART" name="calendarIsVisible" description="Check if calendar icon is visible" finished-at="2021-03-04T00:54:03 ART" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calendarIsVisible -->
+        <test-method signature="myxLogoIsVisible()[pri:9, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:03 ART" name="myxLogoIsVisible" description="Check if MYX Logo is visible" finished-at="2021-03-04T00:54:03 ART" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myxLogoIsVisible -->
+        <test-method signature="openMenu()[pri:10, instance:testCases.S003HomeScreenActiveAccountCases@22590e3e]" started-at="2021-03-04T00:54:03 ART" name="openMenu" description="Open and Close Menu functionality" finished-at="2021-03-04T00:54:03 ART" duration-ms="792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMenu -->
-        <test-method signature="openMenuCheckProfiles()[pri:31, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:43 ART" name="openMenuCheckProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:45 ART" duration-ms="1983" status="PASS">
+      </class> <!-- testCases.S003HomeScreenActiveAccountCases -->
+      <class name="testCases.S001LogInCases">
+        <test-method is-config="true" signature="startConnection()[pri:0, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:03 ART" name="startConnection" finished-at="2021-03-04T00:53:11 ART" duration-ms="7537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openMenuCheckProfiles -->
-        <test-method signature="openMenuSwitchProfiles()[pri:32, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:45 ART" name="openMenuSwitchProfiles" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:53 ART" duration-ms="8830" status="PASS">
+        </test-method> <!-- startConnection -->
+        <test-method retried="true" signature="welcomeisDisplayed()[pri:-2, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:11 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-03-04T00:53:11 ART" duration-ms="244" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openMenuSwitchProfiles -->
-        <test-method signature="openMenuCheckAddUser()[pri:33, instance:testCases.HomeScreenActiveAccountCases@53dfacba]" started-at="2021-02-24T21:51:53 ART" name="openMenuCheckAddUser" description="Open menu and check profile 1 and 2 are displayed" finished-at="2021-02-24T21:51:55 ART" duration-ms="1196" status="PASS">
+        </test-method> <!-- welcomeisDisplayed -->
+        <test-method retried="true" signature="welcomeisDisplayed()[pri:-2, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:11 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-03-04T00:53:11 ART" duration-ms="119" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openMenuCheckAddUser -->
-      </class> <!-- testCases.HomeScreenActiveAccountCases -->
-      <class name="testCases.ManageProfilesCases">
-        <test-method signature="openManageProfiles()[pri:1, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:51:55 ART" name="openManageProfiles" description="Open Manage Profiles" finished-at="2021-02-24T21:52:06 ART" duration-ms="11081" status="PASS">
+        </test-method> <!-- welcomeisDisplayed -->
+        <test-method retried="true" signature="welcomeisDisplayed()[pri:-2, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:11 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-03-04T00:53:11 ART" duration-ms="110" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomeisDisplayed -->
+        <test-method signature="welcomeisDisplayed()[pri:-2, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:11 ART" name="welcomeisDisplayed" description="First screen &#039;Welcome to MYX&#039; is displayed" finished-at="2021-03-04T00:53:12 ART" duration-ms="108" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomeisDisplayed -->
+        <test-method signature="theRoadisDisplayed()[pri:-1, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:12 ART" name="theRoadisDisplayed" description="First screen &#039;The road...&#039; is displayed" finished-at="2021-03-04T00:53:12 ART" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- theRoadisDisplayed -->
+        <test-method signature="invalidEmail()[pri:0, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:12 ART" name="invalidEmail" description="Invalid login scenario with a wrong email." finished-at="2021-03-04T00:53:18 ART" duration-ms="5989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmail -->
+        <test-method signature="invalidPassword()[pri:1, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:18 ART" name="invalidPassword" description="Invalid login scenario with a wrong password." finished-at="2021-03-04T00:53:23 ART" duration-ms="4339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method signature="noEmailAndPassword()[pri:2, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:23 ART" name="noEmailAndPassword" description="Invalid login scenario with an empty email and password." finished-at="2021-03-04T00:53:26 ART" duration-ms="3157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noEmailAndPassword -->
+        <test-method signature="passwordRecoveryEmpty()[pri:3, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:26 ART" name="passwordRecoveryEmpty" description="Customer wants to reset the password, but entered no email." finished-at="2021-03-04T00:53:30 ART" duration-ms="3654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordRecoveryEmpty -->
+        <test-method signature="passwordRecoveryWrongEmail()[pri:4, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:30 ART" name="passwordRecoveryWrongEmail" description="Customer wants to reset the password, but entered an invalid email." finished-at="2021-03-04T00:53:36 ART" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordRecoveryWrongEmail -->
+        <test-method signature="passwordRecoveryzValid()[pri:5, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:36 ART" name="passwordRecoveryzValid" description="Customer wants to reset the password, but entered no email." finished-at="2021-03-04T00:53:41 ART" duration-ms="5519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordRecoveryzValid -->
+        <test-method signature="iDontHaveAccount()[pri:6, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:41 ART" name="iDontHaveAccount" description="Customer selects the option &#039;I don&#039;t have an account&#039;." finished-at="2021-03-04T00:53:44 ART" duration-ms="2636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iDontHaveAccount -->
+        <test-method signature="validEmailAndPassword()[pri:7, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:53:44 ART" name="validEmailAndPassword" description="Valid login scenario with a valid email and password." finished-at="2021-03-04T00:53:50 ART" duration-ms="6310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validEmailAndPassword -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.S001LogInCases@409986fe]" started-at="2021-03-04T00:56:25 ART" name="TearDown" finished-at="2021-03-04T00:56:25 ART" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.S001LogInCases -->
+      <class name="testCases.S005AddProfileMainScreenCases">
+        <test-method signature="openMenuClickAddUser()[pri:0, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:55:56 ART" name="openMenuClickAddUser" description="Select &#039;add profile&#039; from the menu on the Main Screen" finished-at="2021-03-04T00:56:01 ART" duration-ms="4603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMenuClickAddUser -->
+        <test-method signature="createProfileIsDisplayed()[pri:1, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:01 ART" name="createProfileIsDisplayed" description="Check if &#039;Create Profile&#039; title is visible" finished-at="2021-03-04T00:56:02 ART" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProfileIsDisplayed -->
+        <test-method signature="pictureIconIsDisplayed()[pri:2, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:02 ART" name="pictureIconIsDisplayed" description="Check if &#039;Photo&#039; icon is visible" finished-at="2021-03-04T00:56:02 ART" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pictureIconIsDisplayed -->
+        <test-method signature="emailFieldIsVisible()[pri:3, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:02 ART" name="emailFieldIsVisible" description="Check if &#039;Email&#039; is visible" finished-at="2021-03-04T00:56:03 ART" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailFieldIsVisible -->
+        <test-method signature="firstNameFieldIsVisible()[pri:3, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:03 ART" name="firstNameFieldIsVisible" description="Check if &#039;First Name&#039; is visible" finished-at="2021-03-04T00:56:03 ART" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstNameFieldIsVisible -->
+        <test-method signature="lastNameFieldIsVisible()[pri:3, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:03 ART" name="lastNameFieldIsVisible" description="Check if &#039;Last Name&#039; is visible" finished-at="2021-03-04T00:56:04 ART" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastNameFieldIsVisible -->
+        <test-method signature="termsAndConditionsTitleIsVisible()[pri:3, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:04 ART" name="termsAndConditionsTitleIsVisible" description="Check if &#039;T&amp;C&#039; title is visible" finished-at="2021-03-04T00:56:04 ART" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termsAndConditionsTitleIsVisible -->
+        <test-method signature="termsAndConditionsContentIsVisible()[pri:4, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:04 ART" name="termsAndConditionsContentIsVisible" description="Check if &#039;T&amp;C&#039; content title is visible" finished-at="2021-03-04T00:56:07 ART" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termsAndConditionsContentIsVisible -->
+        <test-method signature="declineTC()[pri:5, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:07 ART" name="declineTC" description="Decline T&amp;C" finished-at="2021-03-04T00:56:15 ART" duration-ms="8131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- declineTC -->
+        <test-method signature="termsAndConditionsContentTestIsVisible()[pri:5, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:15 ART" name="termsAndConditionsContentTestIsVisible" description="Check if &#039;T&amp;C&#039; content text is visible" finished-at="2021-03-04T00:56:16 ART" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termsAndConditionsContentTestIsVisible -->
+        <test-method signature="enterName()[pri:6, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:16 ART" name="enterName" description="Enter Name" finished-at="2021-03-04T00:56:17 ART" duration-ms="1145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterName -->
+        <test-method signature="enterLastName()[pri:7, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:17 ART" name="enterLastName" description="Enter Last Name" finished-at="2021-03-04T00:56:18 ART" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLastName -->
+        <test-method signature="enterInvalidEmail()[pri:8, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:18 ART" name="enterInvalidEmail" description="Enter invalid Email" finished-at="2021-03-04T00:56:25 ART" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidEmail -->
+        <test-method signature="blaDisplayed()[pri:10, instance:testCases.S005AddProfileMainScreenCases@5f780a86]" started-at="2021-03-04T00:56:25 ART" name="blaDisplayed" finished-at="2021-03-04T00:56:25 ART" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blaDisplayed -->
+      </class> <!-- testCases.S005AddProfileMainScreenCases -->
+      <class name="testCases.S004ManageProfilesCases">
+        <test-method signature="openManageProfiles()[pri:1, instance:testCases.S004ManageProfilesCases@53dad875]" started-at="2021-03-04T00:54:03 ART" name="openManageProfiles" description="Open Manage Profiles" finished-at="2021-03-04T00:54:12 ART" duration-ms="8191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openManageProfiles -->
-        <test-method signature="editManageProfiles()[pri:2, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:52:06 ART" name="editManageProfiles" description="Edit Manage Profiles" finished-at="2021-02-24T21:52:52 ART" duration-ms="46344" status="PASS">
+        <test-method signature="editManageProfiles()[pri:2, instance:testCases.S004ManageProfilesCases@53dad875]" started-at="2021-03-04T00:54:12 ART" name="editManageProfiles" description="Edit Manage Profiles" finished-at="2021-03-04T00:55:00 ART" duration-ms="48542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editManageProfiles -->
-        <test-method signature="editManageProfilesBack()[pri:3, instance:testCases.ManageProfilesCases@79767781]" started-at="2021-02-24T21:52:52 ART" name="editManageProfilesBack" description="Edit Manage Profiles back to default information." finished-at="2021-02-24T21:53:36 ART" duration-ms="44444" status="PASS">
+        <test-method signature="editManageProfilesBack()[pri:3, instance:testCases.S004ManageProfilesCases@53dad875]" started-at="2021-03-04T00:55:00 ART" name="editManageProfilesBack" description="Edit Manage Profiles back to default information." finished-at="2021-03-04T00:55:43 ART" duration-ms="42740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editManageProfilesBack -->
-      </class> <!-- testCases.ManageProfilesCases -->
+        <test-method signature="changeMainProfilePicture()[pri:4, instance:testCases.S004ManageProfilesCases@53dad875]" started-at="2021-03-04T00:55:43 ART" name="changeMainProfilePicture" description="Take a profile picture" finished-at="2021-03-04T00:55:56 ART" duration-ms="13372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeMainProfilePicture -->
+      </class> <!-- testCases.S004ManageProfilesCases -->
     </test> <!-- MYXfitness Resgression Test Classes -->
   </suite> <!-- MYXfitness Regression Test -->
 </testng-results>

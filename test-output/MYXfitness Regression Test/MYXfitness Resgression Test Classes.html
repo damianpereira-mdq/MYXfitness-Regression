@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MYXfitness Resgression Test Classes</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>38/2/6</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 24 13:02:47 ART 2021</td>
+<td>Started on:</td><td>Mon Mar 01 15:53:29 ART 2021</td>
 </tr>
-<tr><td>Total time:</td><td>205 seconds (205300 ms)</td>
+<tr><td>Total time:</td><td>255 seconds (255271 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.HomeScreenCases.openMenuCheckAddUser()'><b>openMenuCheckAddUser</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+<td title='testCases.S004ManageProfilesCases.changeMainProfilePicture()'><b>changeMainProfilePicture</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Take a profile picture</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
-Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
-*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -106,7 +138,378 @@ Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
 	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
 	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:188)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace2095885081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2095885081'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div></td>
+<td>20</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1933965693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1933965693'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.accountNameIsVisible()'><b>accountNameIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Account Name is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.addUserisDisplayed()'><b>addUserisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: 'Add User' option is displayed and clickable</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.bikeFilterIsVisible()'><b>bikeFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Bike Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.calendarIsVisible()'><b>calendarIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if calendar icon is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.clickAddUser()'><b>clickAddUser</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Click 'add User' and go back to the 'Who's working out today' screen</td>
+<td></td>
+<td>1</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.createProfileIsDisplayed()'><b>createProfileIsDisplayed</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Create Profile' title is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.crossTrainingFilterIsVisible()'><b>crossTrainingFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Cross-Training Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
+<td></td>
+<td>46</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.editManageProfilesBack()'><b>editManageProfilesBack</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Edit Manage Profiles back to default information.</td>
+<td></td>
+<td>48</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.emailFieldIsVisible()'><b>emailFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Email' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.firstNameFieldIsVisible()'><b>firstNameFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'First Name' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.floorFilterIsVisible()'><b>floorFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Floor Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.iDontHaveAccount()'><b>iDontHaveAccount</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer selects the option 'I don't have an account'.</td>
+<td></td>
+<td>2</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.invalidEmail()'><b>invalidEmail</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with a wrong email.</td>
+<td></td>
+<td>6</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.invalidPassword()'><b>invalidPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with a wrong password.</td>
+<td></td>
+<td>4</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.lastNameFieldIsVisible()'><b>lastNameFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Last Name' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.mainProfileisDisplayed()'><b>mainProfileisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Main profile is displayed and clickable</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.myxLogoIsVisible()'><b>myxLogoIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if MYX Logo is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.myxMediaIsVisible()'><b>myxMediaIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if MYX Media is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.noEmailAndPassword()'><b>noEmailAndPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with an empty email and password.</td>
+<td></td>
+<td>3</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.openManageProfiles()'><b>openManageProfiles</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Open Manage Profiles</td>
+<td></td>
+<td>10</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.openMenu()'><b>openMenu</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Open and Close Menu functionality</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.openMenuClickAddUser()'><b>openMenuClickAddUser</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Select 'add profile' from the menu on the Main Screen</td>
+<td></td>
+<td>3</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryEmpty()'><b>passwordRecoveryEmpty</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
+<td></td>
+<td>3</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryWrongEmail()'><b>passwordRecoveryWrongEmail</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered an invalid email.</td>
+<td></td>
+<td>5</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryzValid()'><b>passwordRecoveryzValid</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
+<td></td>
+<td>5</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.pictureIconIsDisplayed()'><b>pictureIconIsDisplayed</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Photo' icon is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.profileHeaderIsVisible()'><b>profileHeaderIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if 'Profile Header' is visible</td>
+<td></td>
+<td>7</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.profileTitleisDisplayed()'><b>profileTitleisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Who's working out today screen: PROFILE title is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.recoveryFilterIsVisible()'><b>recoveryFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Recovery Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.smartMYXIsVisible()'><b>smartMYXIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Smart MYX is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@6dfcffb5</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsContentIsVisible()'><b>termsAndConditionsContentIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' content title is visible</td>
+<td></td>
+<td>2</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsContentTestIsVisible()'><b>termsAndConditionsContentTestIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' content text is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsTitleIsVisible()'><b>termsAndConditionsTitleIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' title is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@71d8cfe7</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.theRoadisDisplayed()'><b>theRoadisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'The road...' is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Valid login scenario with a valid email and password.</td>
+<td></td>
+<td>6</td>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.validateOptionsAvailable()'><b>validateOptionsAvailable</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Select MAIN profile to LOGIN</td>
+<td></td>
+<td>2</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.whosWorkingOutTitleisDisplayed()'><b>whosWorkingOutTitleisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: 'Who's working out today' title is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@6c806c8b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.changeMainProfilePicture()'><b>changeMainProfilePicture</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Take a profile picture</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.myxfitness.app:id/cameraContent (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:341)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,15 +538,14 @@ Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace11529827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11529827'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
-Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
-*** Element info: {Using=id, value=com.myxfitness.app:id/stats}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/cameraContent}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,7 +568,435 @@ Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
 	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
 	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at testCases.HomeScreenCases.openMenuCheckAddUser(HomeScreenCases.java:188)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace859137638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace859137638'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.myxfitness.app:id/cameraContent (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:341)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/cameraContent}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div></td>
+<td>23</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.changeMainProfilePicture()'><b>changeMainProfilePicture</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Take a profile picture</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace686366573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace686366573'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div></td>
+<td>20</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.changeMainProfilePicture()'><b>changeMainProfilePicture</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Take a profile picture</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace119876571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace119876571'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.myxfitness.app:id/profileHeader (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at testCases.S004ManageProfilesCases.changeMainProfilePicture(S004ManageProfilesCases.java:332)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-EER3MNQ&apos;, ip: &apos;192.168.1.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {databaseEnabled: false, desired: {deviceName: MYX215A, platformName: android, platformVersion: 8.1.0, udid: INB04749A}, deviceApiLevel: 27, deviceManufacturer: alps, deviceModel: MYX215A, deviceName: INB04749A, deviceScreenDensity: 240, deviceScreenSize: 1920x1080, deviceUDID: INB04749A, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 1.5, platform: LINUX, platformName: Android, platformVersion: 8.1.0, statBarHeight: 36, takesScreenshot: true, udid: INB04749A, viewportRect: {height: 972, left: 0, top: 36, width: 1920}, warnings: {}, webStorageEnabled: false}
+Session ID: 3fe00c28-0a2f-45af-a874-8f87cfacb9ae
+*** Element info: {Using=id, value=com.myxfitness.app:id/profileHeader}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+</pre></div></td>
+<td>20</td>
+<td>testCases.S004ManageProfilesCases@184fb68d</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace715504968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace715504968'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,106 +1026,152 @@ Session ID: 3098b64c-eb4f-43be-a40c-803c2eae6c78
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>22</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testCases.HomeScreenCases.accountNameIsVisible()'><b>accountNameIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if Account Name is visible</td>
-<td></td>
 <td>0</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
 <tr>
-<td title='testCases.HomeScreenCases.bikeFilterIsVisible()'><b>bikeFilterIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if Bike Filter is visible</td>
-<td></td>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1157462948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157462948'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
 <tr>
-<td title='testCases.ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
-<td></td>
-<td>48</td>
-<td>testCases.ManageProfilesCases@173373b4</td></tr>
-<tr>
-<td title='testCases.ManageProfilesCases.editManageProfilesBack()'><b>editManageProfilesBack</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles back to default information.</td>
-<td></td>
-<td>54</td>
-<td>testCases.ManageProfilesCases@173373b4</td></tr>
-<tr>
-<td title='testCases.LogInCases.iDontHaveAccount()'><b>iDontHaveAccount</b><br>Test class: testCases.LogInCases<br>Test method: Customer selects the option 'I don't have an account'.</td>
-<td></td>
-<td>2</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.LogInCases.invalidEmail()'><b>invalidEmail</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong email.</td>
-<td></td>
-<td>11</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.LogInCases.invalidPassword()'><b>invalidPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong password.</td>
-<td></td>
-<td>4</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.LogInCases.noEmailAndPassword()'><b>noEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with an empty email and password.</td>
-<td></td>
-<td>2</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.ManageProfilesCases.openManageProfiles()'><b>openManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Open Manage Profiles</td>
-<td></td>
-<td>13</td>
-<td>testCases.ManageProfilesCases@173373b4</td></tr>
-<tr>
-<td title='testCases.HomeScreenCases.openMenu()'><b>openMenu</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open and Close Menu functionality</td>
-<td></td>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace189820624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace189820624'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
-<tr>
-<td title='testCases.HomeScreenCases.openMenuCheckProfiles()'><b>openMenuCheckProfiles</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
-<td></td>
-<td>1</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
-<tr>
-<td title='testCases.HomeScreenCases.openMenuSwitchProfiles()'><b>openMenuSwitchProfiles</b><br>Test class: testCases.HomeScreenCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
-<td></td>
-<td>9</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
-<tr>
-<td title='testCases.LogInCases.passwordRecoveryEmpty()'><b>passwordRecoveryEmpty</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
-<td></td>
-<td>3</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.LogInCases.passwordRecoveryWrongEmail()'><b>passwordRecoveryWrongEmail</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered an invalid email.</td>
-<td></td>
-<td>5</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.LogInCases.passwordRecoveryzValid()'><b>passwordRecoveryzValid</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
-<td></td>
-<td>5</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.HomeScreenCases.profileHeaderIsVisible()'><b>profileHeaderIsVisible</b><br>Test class: testCases.HomeScreenCases<br>Test method: Check if 'Profile Header' is visible</td>
-<td></td>
-<td>0</td>
-<td>testCases.HomeScreenCases@63da207f</td></tr>
-<tr>
-<td title='testCases.LogInCases.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Valid login scenario with a valid email and password.</td>
-<td></td>
-<td>6</td>
-<td>testCases.LogInCases@7d755813</td></tr>
-<tr>
-<td title='testCases.WhosWorkingCases.validateOptionsAvailable()'><b>validateOptionsAvailable</b><br>Test class: testCases.WhosWorkingCases</td>
-<td></td>
-<td>11</td>
-<td>testCases.WhosWorkingCases@69c93ca4</td></tr>
+<td>testCases.S001LogInCases@9d3c67</td></tr>
 </table><p>
 </body>
 </html>

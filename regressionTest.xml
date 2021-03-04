@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="MYXfitness Regression Test" verbose="5" configfailurepolicy="continue">
+<suite name="MYXfitness Regression Test" verbose="2" >
+	<listeners>
+	<listener class-name="listeners.TestAllureListener" />	
+	<listener class-name="listeners.Transform" />
+	
+	</listeners>
+
 	<test name="MYXfitness Resgression Test Classes" preserve-order="true"  >
 		<classes>
 			<!-- <class name="testCases.SetupConnection" /> -->
-			<class name="testCases.LogInCases" />				
-			<class name="testCases.WhosWorkingCases" />
-			<class name="testCases.HomeScreenActiveAccountCases" />
-			<class name="testCases.ManageProfilesCases" />
-			
+			<class name="testCases.S001LogInCases" />				
+			<class name="testCases.S002WhosWorkingCases" />
+			<class name="testCases.S003HomeScreenActiveAccountCases" />
+			<class name="testCases.S004ManageProfilesCases" />
+			<class name="testCases.S005AddProfileMainScreenCases" />
 			
 		</classes>
 	</test>

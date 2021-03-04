@@ -2,6 +2,7 @@ package testCases;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -11,11 +12,11 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class SetupConnection {
 
-	static AndroidDriver<MobileElement> driver;
+	protected static AndroidDriver<MobileElement> driver;
 	// WebDriverWait wait = new WebDriverWait(driver, 120);
-	
+
 	@BeforeSuite
-	public void startConnection () {
+	public void startConnection() {
 
 		try {
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -43,9 +44,14 @@ public class SetupConnection {
 
 	@AfterSuite
 	public void TearDown() {
-		
-		//driver.quit();
+
+		driver.quit();
 		System.out.println("This is AfterSuite section.");
+	}
+
+	public AndroidDriver getDriver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 
 }

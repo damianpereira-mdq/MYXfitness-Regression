@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Damian\AppData\Local\Temp\testng-eclipse--666096159\testng-customsuite.xml</span>
+                    <span>C:\Users\Damian\AppData\Local\Temp\testng-eclipse-591314978\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="welcomeisDisplayed">welcomeisDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,72 +118,47 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="accountNameIsVisible">accountNameIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="iDontHaveAccount">iDontHaveAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="bikeFilterIsVisible">bikeFilterIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="invalidEmail">invalidEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="calendarIsVisible">calendarIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="invalidPassword">invalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="crossTrainingFilterIsVisible">crossTrainingFilterIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="noEmailAndPassword">noEmailAndPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="floorFilterIsVisible">floorFilterIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryEmpty">passwordRecoveryEmpty</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="myxLogoIsVisible">myxLogoIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryWrongEmail">passwordRecoveryWrongEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="myxMediaIsVisible">myxMediaIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="passwordRecoveryzValid">passwordRecoveryzValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenu">openMenu</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="theRoadisDisplayed">theRoadisDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuCheckAddUser">openMenuCheckAddUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuCheckProfiles">openMenuCheckProfiles</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="openMenuSwitchProfiles">openMenuSwitchProfiles</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="profileHeaderIsVisible">profileHeaderIsVisible</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="recoveryFilterIsVisible">recoveryFilterIsVisible</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCases.HomeScreenActiveAccountCases" class="method navigator-link" hash-for-method="smartMYXIsVisible">smartMYXIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.S001LogInCases" class="method navigator-link" hash-for-method="validEmailAndPassword">validEmailAndPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -184,136 +173,143 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.HomeScreenActiveAccountCases</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.S001LogInCases</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="accountNameIsVisible">
-                  </a> <!-- accountNameIsVisible -->
-                  <span class="method-name">accountNameIsVisible</span>
+                  <a name="welcomeisDisplayed">
+                  </a> <!-- welcomeisDisplayed -->
+                  <span class="method-name">welcomeisDisplayed</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                   <em>
-(Check if Account Name is visible)                  </em>
+(First screen 'Welcome to MYX' is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.S001LogInCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iDontHaveAccount">
+                  </a> <!-- iDontHaveAccount -->
+                  <span class="method-name">iDontHaveAccount</span>
+                  <em>
+(Customer selects the option 'I don't have an account'.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="bikeFilterIsVisible">
-                  </a> <!-- bikeFilterIsVisible -->
-                  <span class="method-name">bikeFilterIsVisible</span>
+                  <a name="invalidEmail">
+                  </a> <!-- invalidEmail -->
+                  <span class="method-name">invalidEmail</span>
                   <em>
-(Check if Bike Filter is visible)                  </em>
+(Invalid login scenario with a wrong email.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="calendarIsVisible">
-                  </a> <!-- calendarIsVisible -->
-                  <span class="method-name">calendarIsVisible</span>
+                  <a name="invalidPassword">
+                  </a> <!-- invalidPassword -->
+                  <span class="method-name">invalidPassword</span>
                   <em>
-(Check if calendar icon is visible)                  </em>
+(Invalid login scenario with a wrong password.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="crossTrainingFilterIsVisible">
-                  </a> <!-- crossTrainingFilterIsVisible -->
-                  <span class="method-name">crossTrainingFilterIsVisible</span>
+                  <a name="noEmailAndPassword">
+                  </a> <!-- noEmailAndPassword -->
+                  <span class="method-name">noEmailAndPassword</span>
                   <em>
-(Check if Cross-Training Filter is visible)                  </em>
+(Invalid login scenario with an empty email and password.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="floorFilterIsVisible">
-                  </a> <!-- floorFilterIsVisible -->
-                  <span class="method-name">floorFilterIsVisible</span>
+                  <a name="passwordRecoveryEmpty">
+                  </a> <!-- passwordRecoveryEmpty -->
+                  <span class="method-name">passwordRecoveryEmpty</span>
                   <em>
-(Check if Floor Filter is visible)                  </em>
+(Customer wants to reset the password, but entered no email.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="myxLogoIsVisible">
-                  </a> <!-- myxLogoIsVisible -->
-                  <span class="method-name">myxLogoIsVisible</span>
+                  <a name="passwordRecoveryWrongEmail">
+                  </a> <!-- passwordRecoveryWrongEmail -->
+                  <span class="method-name">passwordRecoveryWrongEmail</span>
                   <em>
-(Check if MYX Logo is visible)                  </em>
+(Customer wants to reset the password, but entered an invalid email.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="myxMediaIsVisible">
-                  </a> <!-- myxMediaIsVisible -->
-                  <span class="method-name">myxMediaIsVisible</span>
+                  <a name="passwordRecoveryzValid">
+                  </a> <!-- passwordRecoveryzValid -->
+                  <span class="method-name">passwordRecoveryzValid</span>
                   <em>
-(Check if MYX Media is visible)                  </em>
+(Customer wants to reset the password, but entered no email.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openMenu">
-                  </a> <!-- openMenu -->
-                  <span class="method-name">openMenu</span>
+                  <a name="theRoadisDisplayed">
+                  </a> <!-- theRoadisDisplayed -->
+                  <span class="method-name">theRoadisDisplayed</span>
                   <em>
-(Open and Close Menu functionality)                  </em>
+(First screen 'The road...' is displayed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openMenuCheckAddUser">
-                  </a> <!-- openMenuCheckAddUser -->
-                  <span class="method-name">openMenuCheckAddUser</span>
+                  <a name="validEmailAndPassword">
+                  </a> <!-- validEmailAndPassword -->
+                  <span class="method-name">validEmailAndPassword</span>
                   <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openMenuCheckProfiles">
-                  </a> <!-- openMenuCheckProfiles -->
-                  <span class="method-name">openMenuCheckProfiles</span>
-                  <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openMenuSwitchProfiles">
-                  </a> <!-- openMenuSwitchProfiles -->
-                  <span class="method-name">openMenuSwitchProfiles</span>
-                  <em>
-(Open menu and check profile 1 and 2 are displayed)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="profileHeaderIsVisible">
-                  </a> <!-- profileHeaderIsVisible -->
-                  <span class="method-name">profileHeaderIsVisible</span>
-                  <em>
-(Check if 'Profile Header' is visible)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="recoveryFilterIsVisible">
-                  </a> <!-- recoveryFilterIsVisible -->
-                  <span class="method-name">recoveryFilterIsVisible</span>
-                  <em>
-(Check if Recovery Filter is visible)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="smartMYXIsVisible">
-                  </a> <!-- smartMYXIsVisible -->
-                  <span class="method-name">smartMYXIsVisible</span>
-                  <em>
-(Check if Smart MYX is visible)                  </em>
+(Valid login scenario with a valid email and password.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -321,7 +317,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Damian\AppData\Local\Temp\testng-eclipse--666096159\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Damian\AppData\Local\Temp\testng-eclipse-591314978\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -330,7 +326,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.HomeScreenActiveAccountCases&quot;/&gt;
+      &lt;class name=&quot;testCases.S001LogInCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -370,68 +366,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openMenuSwitchProfiles')
-data.setCell(0, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(0, 3, 9502);
+data.setCell(0, 1, 'passwordRecoveryWrongEmail')
+data.setCell(0, 2, 'testCases.S001LogInCases')
+data.setCell(0, 3, 7346);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openMenuCheckAddUser')
-data.setCell(1, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(1, 3, 1757);
+data.setCell(1, 1, 'validEmailAndPassword')
+data.setCell(1, 2, 'testCases.S001LogInCases')
+data.setCell(1, 3, 5966);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'openMenuCheckProfiles')
-data.setCell(2, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(2, 3, 1684);
+data.setCell(2, 1, 'invalidEmail')
+data.setCell(2, 2, 'testCases.S001LogInCases')
+data.setCell(2, 3, 5657);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'openMenu')
-data.setCell(3, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(3, 3, 857);
+data.setCell(3, 1, 'passwordRecoveryzValid')
+data.setCell(3, 2, 'testCases.S001LogInCases')
+data.setCell(3, 3, 5591);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'profileHeaderIsVisible')
-data.setCell(4, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(4, 3, 300);
+data.setCell(4, 1, 'invalidPassword')
+data.setCell(4, 2, 'testCases.S001LogInCases')
+data.setCell(4, 3, 4388);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'accountNameIsVisible')
-data.setCell(5, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(5, 3, 125);
+data.setCell(5, 1, 'passwordRecoveryEmpty')
+data.setCell(5, 2, 'testCases.S001LogInCases')
+data.setCell(5, 3, 3629);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'floorFilterIsVisible')
-data.setCell(6, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(6, 3, 100);
+data.setCell(6, 1, 'noEmailAndPassword')
+data.setCell(6, 2, 'testCases.S001LogInCases')
+data.setCell(6, 3, 3571);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'myxMediaIsVisible')
-data.setCell(7, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(7, 3, 99);
+data.setCell(7, 1, 'iDontHaveAccount')
+data.setCell(7, 2, 'testCases.S001LogInCases')
+data.setCell(7, 3, 2654);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'recoveryFilterIsVisible')
-data.setCell(8, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(8, 3, 99);
+data.setCell(8, 1, 'welcomeisDisplayed')
+data.setCell(8, 2, 'testCases.S001LogInCases')
+data.setCell(8, 3, 239);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'bikeFilterIsVisible')
-data.setCell(9, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(9, 3, 93);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'calendarIsVisible')
-data.setCell(10, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(10, 3, 83);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'myxLogoIsVisible')
-data.setCell(11, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(11, 3, 82);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'smartMYXIsVisible')
-data.setCell(12, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(12, 3, 82);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'crossTrainingFilterIsVisible')
-data.setCell(13, 2, 'testCases.HomeScreenActiveAccountCases')
-data.setCell(13, 3, 81);
+data.setCell(9, 1, 'theRoadisDisplayed')
+data.setCell(9, 2, 'testCases.S001LogInCases')
+data.setCell(9, 3, 177);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -457,70 +437,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.HomeScreenActiveAccountCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.S001LogInCases</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startConnection</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">profileHeaderIsVisible</span>
-                <span class="method-start">8580 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">welcomeisDisplayed</span>
+                <span class="method-start">7776 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">accountNameIsVisible</span>
-                <span class="method-start">8977 ms</span>
+                <span class="method-name">theRoadisDisplayed</span>
+                <span class="method-start">8795 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">bikeFilterIsVisible</span>
-                <span class="method-start">9106 ms</span>
+                <span class="method-name">invalidEmail</span>
+                <span class="method-start">8976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">floorFilterIsVisible</span>
-                <span class="method-start">9202 ms</span>
+                <span class="method-name">invalidPassword</span>
+                <span class="method-start">14636 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">recoveryFilterIsVisible</span>
-                <span class="method-start">9305 ms</span>
+                <span class="method-name">noEmailAndPassword</span>
+                <span class="method-start">19027 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">crossTrainingFilterIsVisible</span>
-                <span class="method-start">9407 ms</span>
+                <span class="method-name">passwordRecoveryEmpty</span>
+                <span class="method-start">22601 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">myxMediaIsVisible</span>
-                <span class="method-start">9491 ms</span>
+                <span class="method-name">passwordRecoveryWrongEmail</span>
+                <span class="method-start">26233 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">smartMYXIsVisible</span>
-                <span class="method-start">9594 ms</span>
+                <span class="method-name">passwordRecoveryzValid</span>
+                <span class="method-start">33582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">calendarIsVisible</span>
-                <span class="method-start">9678 ms</span>
+                <span class="method-name">iDontHaveAccount</span>
+                <span class="method-start">39176 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">myxLogoIsVisible</span>
-                <span class="method-start">9765 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenu</span>
-                <span class="method-start">9850 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuCheckProfiles</span>
-                <span class="method-start">10709 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuSwitchProfiles</span>
-                <span class="method-start">12396 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">openMenuCheckAddUser</span>
-                <span class="method-start">21900 ms</span>
+                <span class="method-name">validEmailAndPassword</span>
+                <span class="method-start">41833 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">23694 ms</span>
+                <span class="method-start">47832 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

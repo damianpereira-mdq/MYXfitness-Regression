@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MYXfitness Resgression Test Classes</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>44/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 24 21:50:38 ART 2021</td>
+<td>Started on:</td><td>Thu Mar 04 00:53:11 ART 2021</td>
 </tr>
-<tr><td>Total time:</td><td>178 seconds (178769 ms)</td>
+<tr><td>Total time:</td><td>194 seconds (194445 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,61 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2020702385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2020702385'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,110 +130,374 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.HomeScreenActiveAccountCases.accountNameIsVisible()'><b>accountNameIsVisible</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Check if Account Name is visible</td>
+<td title='testCases.S003HomeScreenActiveAccountCases.accountNameIsVisible()'><b>accountNameIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Account Name is visible</td>
 <td></td>
 <td>0</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
 <tr>
-<td title='testCases.HomeScreenActiveAccountCases.bikeFilterIsVisible()'><b>bikeFilterIsVisible</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Check if Bike Filter is visible</td>
+<td title='testCases.S002WhosWorkingCases.addUserisDisplayed()'><b>addUserisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: 'Add User' option is displayed and clickable</td>
 <td></td>
 <td>0</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
 <tr>
-<td title='testCases.ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
-<td></td>
-<td>46</td>
-<td>testCases.ManageProfilesCases@79767781</td></tr>
-<tr>
-<td title='testCases.ManageProfilesCases.editManageProfilesBack()'><b>editManageProfilesBack</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Edit Manage Profiles back to default information.</td>
-<td></td>
-<td>44</td>
-<td>testCases.ManageProfilesCases@79767781</td></tr>
-<tr>
-<td title='testCases.LogInCases.iDontHaveAccount()'><b>iDontHaveAccount</b><br>Test class: testCases.LogInCases<br>Test method: Customer selects the option 'I don't have an account'.</td>
-<td></td>
-<td>2</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
-<tr>
-<td title='testCases.LogInCases.invalidEmail()'><b>invalidEmail</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong email.</td>
-<td></td>
-<td>7</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
-<tr>
-<td title='testCases.LogInCases.invalidPassword()'><b>invalidPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with a wrong password.</td>
-<td></td>
-<td>4</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
-<tr>
-<td title='testCases.LogInCases.noEmailAndPassword()'><b>noEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Invalid login scenario with an empty email and password.</td>
-<td></td>
-<td>2</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
-<tr>
-<td title='testCases.ManageProfilesCases.openManageProfiles()'><b>openManageProfiles</b><br>Test class: testCases.ManageProfilesCases<br>Test method: Open Manage Profiles</td>
-<td></td>
-<td>11</td>
-<td>testCases.ManageProfilesCases@79767781</td></tr>
-<tr>
-<td title='testCases.HomeScreenActiveAccountCases.openMenu()'><b>openMenu</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Open and Close Menu functionality</td>
+<td title='testCases.S003HomeScreenActiveAccountCases.bikeFilterIsVisible()'><b>bikeFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Bike Filter is visible</td>
 <td></td>
 <td>0</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
 <tr>
-<td title='testCases.HomeScreenActiveAccountCases.openMenuCheckAddUser()'><b>openMenuCheckAddUser</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
+<td title='testCases.S005AddProfileMainScreenCases.blaDisplayed()'><b>blaDisplayed</b><br>Test class: testCases.S005AddProfileMainScreenCases</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.calendarIsVisible()'><b>calendarIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if calendar icon is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.changeMainProfilePicture()'><b>changeMainProfilePicture</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Take a profile picture</td>
+<td></td>
+<td>13</td>
+<td>testCases.S004ManageProfilesCases@53dad875</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.clickAddUser()'><b>clickAddUser</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Click 'add User' and go back to the 'Who's working out today' screen</td>
 <td></td>
 <td>1</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
 <tr>
-<td title='testCases.HomeScreenActiveAccountCases.openMenuCheckProfiles()'><b>openMenuCheckProfiles</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
+<td title='testCases.S005AddProfileMainScreenCases.createProfileIsDisplayed()'><b>createProfileIsDisplayed</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Create Profile' title is visible</td>
 <td></td>
-<td>1</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
 <tr>
-<td title='testCases.HomeScreenActiveAccountCases.openMenuSwitchProfiles()'><b>openMenuSwitchProfiles</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Open menu and check profile 1 and 2 are displayed</td>
+<td title='testCases.S003HomeScreenActiveAccountCases.crossTrainingFilterIsVisible()'><b>crossTrainingFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Cross-Training Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.declineTC()'><b>declineTC</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Decline T&C</td>
 <td></td>
 <td>8</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
 <tr>
-<td title='testCases.LogInCases.passwordRecoveryEmpty()'><b>passwordRecoveryEmpty</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
+<td title='testCases.S004ManageProfilesCases.editManageProfiles()'><b>editManageProfiles</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Edit Manage Profiles</td>
 <td></td>
-<td>3</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
+<td>48</td>
+<td>testCases.S004ManageProfilesCases@53dad875</td></tr>
 <tr>
-<td title='testCases.LogInCases.passwordRecoveryWrongEmail()'><b>passwordRecoveryWrongEmail</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered an invalid email.</td>
+<td title='testCases.S004ManageProfilesCases.editManageProfilesBack()'><b>editManageProfilesBack</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Edit Manage Profiles back to default information.</td>
 <td></td>
-<td>7</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
+<td>42</td>
+<td>testCases.S004ManageProfilesCases@53dad875</td></tr>
 <tr>
-<td title='testCases.LogInCases.passwordRecoveryzValid()'><b>passwordRecoveryzValid</b><br>Test class: testCases.LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
-<td></td>
-<td>5</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
-<tr>
-<td title='testCases.HomeScreenActiveAccountCases.profileHeaderIsVisible()'><b>profileHeaderIsVisible</b><br>Test class: testCases.HomeScreenActiveAccountCases<br>Test method: Check if 'Profile Header' is visible</td>
-<td></td>
-<td>9</td>
-<td>testCases.HomeScreenActiveAccountCases@53dfacba</td></tr>
-<tr>
-<td title='testCases.LogInCases.theRoadisDisplayed()'><b>theRoadisDisplayed</b><br>Test class: testCases.LogInCases<br>Test method: First screen 'The road...' is displayed</td>
+<td title='testCases.S005AddProfileMainScreenCases.emailFieldIsVisible()'><b>emailFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Email' is visible</td>
 <td></td>
 <td>0</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
 <tr>
-<td title='testCases.LogInCases.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: testCases.LogInCases<br>Test method: Valid login scenario with a valid email and password.</td>
+<td title='testCases.S005AddProfileMainScreenCases.enterInvalidEmail()'><b>enterInvalidEmail</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Enter invalid Email</td>
 <td></td>
-<td>5</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
+<td>6</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
 <tr>
-<td title='testCases.WhosWorkingCases.validateOptionsAvailable()'><b>validateOptionsAvailable</b><br>Test class: testCases.WhosWorkingCases</td>
+<td title='testCases.S005AddProfileMainScreenCases.enterLastName()'><b>enterLastName</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Enter Last Name</td>
+<td></td>
+<td>1</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.enterName()'><b>enterName</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Enter Name</td>
+<td></td>
+<td>1</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.firstNameFieldIsVisible()'><b>firstNameFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'First Name' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.floorFilterIsVisible()'><b>floorFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Floor Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.iDontHaveAccount()'><b>iDontHaveAccount</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer selects the option 'I don't have an account'.</td>
 <td></td>
 <td>2</td>
-<td>testCases.WhosWorkingCases@10ec523c</td></tr>
+<td>testCases.S001LogInCases@409986fe</td></tr>
 <tr>
-<td title='testCases.LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td title='testCases.S001LogInCases.invalidEmail()'><b>invalidEmail</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with a wrong email.</td>
 <td></td>
-<td>12</td>
-<td>testCases.LogInCases@6a4d7f76</td></tr>
+<td>5</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.invalidPassword()'><b>invalidPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with a wrong password.</td>
+<td></td>
+<td>4</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.lastNameFieldIsVisible()'><b>lastNameFieldIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Last Name' is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.mainProfileisDisplayed()'><b>mainProfileisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Main profile is displayed and clickable</td>
+<td></td>
+<td>1</td>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.myxLogoIsVisible()'><b>myxLogoIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if MYX Logo is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.myxMediaIsVisible()'><b>myxMediaIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if MYX Media is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.noEmailAndPassword()'><b>noEmailAndPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Invalid login scenario with an empty email and password.</td>
+<td></td>
+<td>3</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S004ManageProfilesCases.openManageProfiles()'><b>openManageProfiles</b><br>Test class: testCases.S004ManageProfilesCases<br>Test method: Open Manage Profiles</td>
+<td></td>
+<td>8</td>
+<td>testCases.S004ManageProfilesCases@53dad875</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.openMenu()'><b>openMenu</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Open and Close Menu functionality</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.openMenuClickAddUser()'><b>openMenuClickAddUser</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Select 'add profile' from the menu on the Main Screen</td>
+<td></td>
+<td>4</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryEmpty()'><b>passwordRecoveryEmpty</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
+<td></td>
+<td>3</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryWrongEmail()'><b>passwordRecoveryWrongEmail</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered an invalid email.</td>
+<td></td>
+<td>5</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.passwordRecoveryzValid()'><b>passwordRecoveryzValid</b><br>Test class: testCases.S001LogInCases<br>Test method: Customer wants to reset the password, but entered no email.</td>
+<td></td>
+<td>5</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.pictureIconIsDisplayed()'><b>pictureIconIsDisplayed</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'Photo' icon is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.profileHeaderIsVisible()'><b>profileHeaderIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if 'Profile Header' is visible</td>
+<td></td>
+<td>5</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.profileTitleisDisplayed()'><b>profileTitleisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Who's working out today screen: PROFILE title is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.recoveryFilterIsVisible()'><b>recoveryFilterIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Recovery Filter is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S003HomeScreenActiveAccountCases.smartMYXIsVisible()'><b>smartMYXIsVisible</b><br>Test class: testCases.S003HomeScreenActiveAccountCases<br>Test method: Check if Smart MYX is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S003HomeScreenActiveAccountCases@22590e3e</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsContentIsVisible()'><b>termsAndConditionsContentIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' content title is visible</td>
+<td></td>
+<td>2</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsContentTestIsVisible()'><b>termsAndConditionsContentTestIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' content text is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S005AddProfileMainScreenCases.termsAndConditionsTitleIsVisible()'><b>termsAndConditionsTitleIsVisible</b><br>Test class: testCases.S005AddProfileMainScreenCases<br>Test method: Check if 'T&C' title is visible</td>
+<td></td>
+<td>0</td>
+<td>testCases.S005AddProfileMainScreenCases@5f780a86</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.theRoadisDisplayed()'><b>theRoadisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'The road...' is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.validEmailAndPassword()'><b>validEmailAndPassword</b><br>Test class: testCases.S001LogInCases<br>Test method: Valid login scenario with a valid email and password.</td>
+<td></td>
+<td>6</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.validateOptionsAvailable()'><b>validateOptionsAvailable</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: Select MAIN profile to LOGIN</td>
+<td></td>
+<td>2</td>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
+<tr>
+<td title='testCases.S002WhosWorkingCases.whosWorkingOutTitleisDisplayed()'><b>whosWorkingOutTitleisDisplayed</b><br>Test class: testCases.S002WhosWorkingCases<br>Test method: 'Who's working out today' title is displayed</td>
+<td></td>
+<td>0</td>
+<td>testCases.S002WhosWorkingCases@19b047fe</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1436610577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1436610577'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace862931361", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace862931361'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
+<tr>
+<td title='testCases.S001LogInCases.welcomeisDisplayed()'><b>welcomeisDisplayed</b><br>Test class: testCases.S001LogInCases<br>Test method: First screen 'Welcome to MYX' is displayed</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1192787792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1192787792'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [WELCOME TO MYXfitness!dsedsf] but found [WELCOME TO MYXfitness!]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testCases.S001LogInCases.welcomeisDisplayed(S001LogInCases.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:214)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>testCases.S001LogInCases@409986fe</td></tr>
 </table><p>
 </body>
 </html>

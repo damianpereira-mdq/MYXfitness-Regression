@@ -15,6 +15,8 @@
 
 	<dependencies>
 
+		
+
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-clean-plugin</artifactId>
@@ -94,7 +96,7 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>regressionTest.xml</suiteXmlFile>
 						</suiteXmlFiles>
-						
+
 						<argLine>
 							-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 						</argLine>
